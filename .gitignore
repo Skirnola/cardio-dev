@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+
+# Generated local history report
+progress/history-summary.json
+
+# Evaluator-owned hidden tests are not committed
+tests/hidden/*
+!tests/hidden/.gitkeep

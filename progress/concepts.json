@@ -1,0 +1,565 @@
+{
+  "version": 1,
+  "concepts": {
+    "abort-signal": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "accessibility": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "accumulation": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "arrays": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "async": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "async-await": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "async-state": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "boss-integration": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "building-arrays": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "caching": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "cancellation": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "case handling": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "comparison": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "concurrency": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "conditions": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "counting": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "dates": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "debounce": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "deduplication": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "derived-state": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "division": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "domain rules": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "effects": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "empty-handling": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "error-handling": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "filtering": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "flattening": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "functions": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "grouping": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "hooks": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "immutability": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "indexing": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "loading-state": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "loops": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "map": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "mapping": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "mutation": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "nested state": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "normalization": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "object-output": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "objects": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "partial-failure": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "partial-records": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "promises": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "pure transformations": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "react-effects": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "react-rendering": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "react-state": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "records": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "reducer-like logic": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "reducing": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "references": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "request-deduplication": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "rerenders": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "retry": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "reuse": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "run-compression": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "scope": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "search": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "sentinel-values": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "set": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "sets": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "sorting": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "stale-response-protection": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "stale-responses": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "state transitions": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "state-transitions": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "strings": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "tie-breakers": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    },
+    "ties": {
+      "mastery": 0,
+      "successfulUses": 0,
+      "recentFailures": 0,
+      "lastSeenExercise": null,
+      "highestLevelPassed": 0,
+      "needsSpacedReview": false
+    }
+  }
+}

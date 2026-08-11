@@ -1,0 +1,3819 @@
+[
+  {
+    "id": "D1-E01",
+    "title": "Sum All Numbers",
+    "day": 1,
+    "level": 1,
+    "concepts": [
+      "loops",
+      "accumulation",
+      "arrays"
+    ],
+    "prerequisites": [],
+    "context": "isolated",
+    "objective": "Compute the total of a list of numbers.",
+    "requirements": [
+      "Return the sum of every number in the array.",
+      "Return 0 for an empty array."
+    ],
+    "constraints": [
+      "Do not mutate the input array."
+    ],
+    "examples": [
+      {
+        "input": [
+          1,
+          2,
+          3
+        ],
+        "output": 6
+      },
+      {
+        "input": [
+          4,
+          -1,
+          2
+        ],
+        "output": 5
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-01/001-sum-all-numbers.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-01/001-sum-all-numbers.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The input array is preserved.",
+      "Every value is included exactly once.",
+      "Empty input produces 0."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D1-E02",
+    "title": "Find the Largest Number",
+    "day": 1,
+    "level": 1,
+    "concepts": [
+      "loops",
+      "comparison",
+      "arrays"
+    ],
+    "prerequisites": [
+      "D1-E01"
+    ],
+    "context": "isolated",
+    "objective": "Select the largest value from a list.",
+    "requirements": [
+      "Return the largest number in the array.",
+      "Return undefined for an empty array."
+    ],
+    "constraints": [
+      "Do not mutate the input array."
+    ],
+    "examples": [
+      {
+        "input": [
+          4,
+          2,
+          9,
+          1
+        ],
+        "output": 9
+      },
+      {
+        "input": [
+          -3,
+          -7,
+          -1
+        ],
+        "output": -1
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-01/002-find-largest-number.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-01/002-find-largest-number.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The input array is preserved.",
+      "The first seen maximum is sufficient because the return value is a single number.",
+      "Empty input produces undefined."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D1-E03",
+    "title": "Count Numbers Above a Threshold",
+    "day": 1,
+    "level": 1,
+    "concepts": [
+      "loops",
+      "conditions",
+      "counting"
+    ],
+    "prerequisites": [
+      "D1-E01",
+      "D1-E02"
+    ],
+    "context": "isolated",
+    "objective": "Count how many values are strictly greater than a limit.",
+    "requirements": [
+      "Count only numbers that are strictly greater than the threshold.",
+      "Return 0 for an empty array."
+    ],
+    "constraints": [
+      "Do not mutate the input array."
+    ],
+    "examples": [
+      {
+        "input": {
+          "values": [
+            1,
+            3,
+            4,
+            3,
+            9
+          ],
+          "minimum": 3
+        },
+        "output": 2
+      },
+      {
+        "input": {
+          "values": [
+            2,
+            2,
+            1
+          ],
+          "minimum": 5
+        },
+        "output": 0
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-01/003-count-greater-than.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-01/003-count-greater-than.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Values equal to the threshold are not counted.",
+      "The input array is preserved.",
+      "Counting is based on the original order only, not sorting or mutation."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D1-E04",
+    "title": "Find the First Matching Index",
+    "day": 1,
+    "level": 2,
+    "concepts": [
+      "indexing",
+      "search",
+      "sentinel-values"
+    ],
+    "prerequisites": [
+      "D1-E03"
+    ],
+    "context": "isolated",
+    "objective": "Return the first position of a matching string.",
+    "requirements": [
+      "Return the index of the first exact string match.",
+      "Return -1 when the target is missing.",
+      "Add one learner-written test for the missing-target case."
+    ],
+    "constraints": [
+      "Do not mutate the input array.",
+      "Match text exactly, including case."
+    ],
+    "examples": [
+      {
+        "input": {
+          "values": [
+            "blue",
+            "green",
+            "blue"
+          ],
+          "target": "blue"
+        },
+        "output": 0
+      },
+      {
+        "input": {
+          "values": [
+            "a",
+            "b",
+            "c"
+          ],
+          "target": "z"
+        },
+        "output": -1
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-01/004-find-first-index.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-01/004-find-first-index.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The first matching index is returned when duplicates exist.",
+      "Absent targets produce -1.",
+      "The input array is preserved."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D1-E05",
+    "title": "Keep Even Numbers",
+    "day": 1,
+    "level": 2,
+    "concepts": [
+      "conditions",
+      "building-arrays",
+      "immutability"
+    ],
+    "prerequisites": [
+      "D1-E04"
+    ],
+    "context": "isolated",
+    "objective": "Build a new array containing only even values.",
+    "requirements": [
+      "Return a new array containing only the even numbers.",
+      "Keep the original order and preserve duplicates.",
+      "Add one learner-written test proving the input array is unchanged."
+    ],
+    "constraints": [
+      "Do not mutate the input array."
+    ],
+    "examples": [
+      {
+        "input": [
+          7,
+          2,
+          4,
+          9,
+          6,
+          2
+        ],
+        "output": [
+          2,
+          4,
+          6,
+          2
+        ]
+      },
+      {
+        "input": [
+          1,
+          3,
+          5
+        ],
+        "output": []
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-01/005-keep-even-numbers.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-01/005-keep-even-numbers.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The output is a new array.",
+      "Order is preserved.",
+      "The input array is preserved."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D1-E06",
+    "title": "Sum Only Positive Numbers",
+    "day": 1,
+    "level": 2,
+    "concepts": [
+      "conditions",
+      "accumulation",
+      "reuse"
+    ],
+    "prerequisites": [
+      "D1-E05"
+    ],
+    "context": "isolated",
+    "objective": "Add only numbers greater than zero.",
+    "requirements": [
+      "Sum only values greater than 0.",
+      "Ignore zeros and negative numbers.",
+      "Add one learner-written test for an all-nonpositive array."
+    ],
+    "constraints": [
+      "Do not mutate the input array."
+    ],
+    "examples": [
+      {
+        "input": [
+          -3,
+          0,
+          4,
+          5,
+          -1
+        ],
+        "output": 9
+      },
+      {
+        "input": [
+          -2,
+          0,
+          -5
+        ],
+        "output": 0
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-01/006-sum-positive-numbers.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-01/006-sum-positive-numbers.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Only values greater than zero contribute to the total.",
+      "The input array is preserved.",
+      "Empty or all-nonpositive input returns 0."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D1-E07",
+    "title": "Average the Numbers",
+    "day": 1,
+    "level": 2,
+    "concepts": [
+      "accumulation",
+      "division",
+      "empty-handling"
+    ],
+    "prerequisites": [
+      "D1-E06"
+    ],
+    "context": "isolated",
+    "objective": "Compute the arithmetic mean of a list of numbers.",
+    "requirements": [
+      "Return the arithmetic mean of the array values.",
+      "Return null for an empty array.",
+      "Add one learner-written test for the empty-array case."
+    ],
+    "constraints": [
+      "Do not mutate the input array."
+    ],
+    "examples": [
+      {
+        "input": [
+          2,
+          4,
+          7
+        ],
+        "output": 4.333333333333333
+      },
+      {
+        "input": [
+          10,
+          -2,
+          4
+        ],
+        "output": 4
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-01/007-average-numbers.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-01/007-average-numbers.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The input array is preserved.",
+      "Empty input returns null.",
+      "The result is based on all numbers in the array."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D1-E08",
+    "title": "Find the Longest Word",
+    "day": 1,
+    "level": 2,
+    "concepts": [
+      "comparison",
+      "strings",
+      "ties"
+    ],
+    "prerequisites": [
+      "D1-E02",
+      "D1-E07"
+    ],
+    "context": "isolated",
+    "objective": "Select the longest string from an array of words.",
+    "requirements": [
+      "Return the longest word in the array.",
+      "If two words tie for length, return the first one.",
+      "Add one learner-written test for a tied-length case."
+    ],
+    "constraints": [
+      "Do not mutate the input array."
+    ],
+    "examples": [
+      {
+        "input": [
+          "sun",
+          "planet",
+          "moon"
+        ],
+        "output": "planet"
+      },
+      {
+        "input": [
+          "pear",
+          "plum",
+          "kiwi"
+        ],
+        "output": "pear"
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-01/008-find-longest-word.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-01/008-find-longest-word.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Ties are resolved by keeping the first longest word.",
+      "The input array is preserved.",
+      "Empty input returns undefined."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D1-E09",
+    "title": "Summarize Numbers",
+    "day": 1,
+    "level": 2,
+    "concepts": [
+      "accumulation",
+      "comparison",
+      "object-output"
+    ],
+    "prerequisites": [
+      "D1-E07",
+      "D1-E08"
+    ],
+    "context": "combined",
+    "objective": "Return a compact numeric summary object.",
+    "requirements": [
+      "Return count, sum, min, and max in one object.",
+      "Use undefined for min and max when the array is empty.",
+      "Add one learner-written test for the empty-array summary."
+    ],
+    "constraints": [
+      "Do not mutate the input array."
+    ],
+    "examples": [
+      {
+        "input": [
+          4,
+          -2,
+          10,
+          1
+        ],
+        "output": {
+          "count": 4,
+          "sum": 13,
+          "min": -2,
+          "max": 10
+        }
+      },
+      {
+        "input": [
+          8
+        ],
+        "output": {
+          "count": 1,
+          "sum": 8,
+          "min": 8,
+          "max": 8
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-01/009-summarize-numbers.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-01/009-summarize-numbers.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The input array is preserved.",
+      "Empty input yields count 0 and undefined min/max.",
+      "Each value contributes to every applicable summary field exactly once."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D1-E10",
+    "title": "Collapse Adjacent Duplicates",
+    "day": 1,
+    "level": 3,
+    "concepts": [
+      "indexing",
+      "conditions",
+      "run-compression"
+    ],
+    "prerequisites": [
+      "D1-E05",
+      "D1-E09"
+    ],
+    "context": "combined",
+    "objective": "Remove consecutive duplicates while preserving order.",
+    "requirements": [
+      "Return a new array with consecutive equal values collapsed to one copy.",
+      "Keep separated duplicate runs as separate entries.",
+      "Add one learner-written test for a repeated-run case."
+    ],
+    "constraints": [
+      "Do not mutate the input array."
+    ],
+    "examples": [
+      {
+        "input": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          1,
+          1
+        ],
+        "output": [
+          1,
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "input": [
+          4,
+          4,
+          1,
+          4,
+          4
+        ],
+        "output": [
+          4,
+          1,
+          4
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-01/010-collapse-adjacent-duplicates.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-01/010-collapse-adjacent-duplicates.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Only adjacent duplicates are collapsed.",
+      "The output is a new array.",
+      "The input array is preserved."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D2-E01",
+    "title": "Filter visible tickets",
+    "day": 2,
+    "level": 1,
+    "concepts": [
+      "arrays",
+      "filtering",
+      "records"
+    ],
+    "prerequisites": [
+      "D1-E01"
+    ],
+    "context": "isolated",
+    "objective": "Return only the tickets that are not archived.",
+    "requirements": [
+      "Return only tickets where archived is false.",
+      "Keep the remaining tickets in their original order.",
+      "Do not mutate the input array or ticket objects."
+    ],
+    "constraints": [
+      "The output must be a new array.",
+      "Order is preserved from the source array.",
+      "Archived tickets are always excluded."
+    ],
+    "examples": [
+      {
+        "input": [
+          {
+            "id": "T-1",
+            "subject": "Reset password",
+            "archived": false
+          },
+          {
+            "id": "T-2",
+            "subject": "Update billing",
+            "archived": true
+          }
+        ],
+        "output": [
+          {
+            "id": "T-1",
+            "subject": "Reset password",
+            "archived": false
+          }
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-02/011-filter-visible-tickets.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-02/011-filter-visible-tickets.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Empty input returns an empty array.",
+      "The original array and ticket objects are not mutated.",
+      "Visible tickets keep their source order."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D2-E02",
+    "title": "Sort tasks by priority",
+    "day": 2,
+    "level": 2,
+    "concepts": [
+      "arrays",
+      "sorting",
+      "records"
+    ],
+    "prerequisites": [
+      "D1-E02"
+    ],
+    "context": "combined",
+    "objective": "Order tasks by priority and due date with deterministic tie rules.",
+    "requirements": [
+      "Sort tasks from highest priority to lowest priority.",
+      "Break equal priorities by earlier due date, then by title, then by id.",
+      "Do not mutate the input array or task objects.",
+      "Add one learner-authored test for a same-priority tie."
+    ],
+    "constraints": [
+      "The same input must always produce the same order.",
+      "Equal priorities use dueAt ascending.",
+      "Equal dueAt values use title ascending, then id ascending."
+    ],
+    "examples": [
+      {
+        "input": [
+          {
+            "id": "A",
+            "title": "Write summary",
+            "priority": 2,
+            "dueAt": "2024-05-02T10:00:00.000Z"
+          },
+          {
+            "id": "B",
+            "title": "Fix bug",
+            "priority": 3,
+            "dueAt": "2024-05-03T10:00:00.000Z"
+          },
+          {
+            "id": "C",
+            "title": "Archive logs",
+            "priority": 3,
+            "dueAt": "2024-05-01T10:00:00.000Z"
+          }
+        ],
+        "output": [
+          {
+            "id": "C",
+            "title": "Archive logs",
+            "priority": 3,
+            "dueAt": "2024-05-01T10:00:00.000Z"
+          },
+          {
+            "id": "B",
+            "title": "Fix bug",
+            "priority": 3,
+            "dueAt": "2024-05-03T10:00:00.000Z"
+          },
+          {
+            "id": "A",
+            "title": "Write summary",
+            "priority": 2,
+            "dueAt": "2024-05-02T10:00:00.000Z"
+          }
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-02/012-sort-tasks-by-priority.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-02/012-sort-tasks-by-priority.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The output is a new array.",
+      "The original array remains unchanged.",
+      "Tie handling is deterministic down to id order."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D2-E03",
+    "title": "Collect unique labels",
+    "day": 2,
+    "level": 2,
+    "concepts": [
+      "set",
+      "deduplication",
+      "strings"
+    ],
+    "prerequisites": [
+      "D1-E01"
+    ],
+    "context": "combined",
+    "objective": "Normalize labels and keep each trimmed label once.",
+    "requirements": [
+      "Trim each label before checking it.",
+      "Discard blank labels after trimming.",
+      "Keep the first occurrence of each trimmed label.",
+      "Add one learner-authored test for blanks or duplicate spacing."
+    ],
+    "constraints": [
+      "The returned Set must preserve first-seen order.",
+      "Duplicates are compared after trimming.",
+      "The input array must not change."
+    ],
+    "examples": [
+      {
+        "input": [
+          "  bug",
+          "ui",
+          "",
+          "bug",
+          "  ui ",
+          "docs"
+        ],
+        "output": [
+          "bug",
+          "ui",
+          "docs"
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-02/013-collect-unique-labels.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-02/013-collect-unique-labels.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Whitespace-only labels are ignored.",
+      "The returned value is a Set.",
+      "Order follows the first retained occurrence of each label."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D2-E04",
+    "title": "Group tickets by status",
+    "day": 2,
+    "level": 2,
+    "concepts": [
+      "objects",
+      "grouping",
+      "arrays"
+    ],
+    "prerequisites": [
+      "D1-E02"
+    ],
+    "context": "combined",
+    "objective": "Bucket each ticket into the correct status list.",
+    "requirements": [
+      "Return an object with open, pending, and resolved keys.",
+      "Place each ticket in the array for its status.",
+      "Keep the original order inside each status array.",
+      "Add one learner-authored test for a missing status bucket."
+    ],
+    "constraints": [
+      "Every status key must exist, even when empty.",
+      "Status buckets keep source order.",
+      "The input array must not be mutated."
+    ],
+    "examples": [
+      {
+        "input": [
+          {
+            "id": "T-1",
+            "subject": "Login issue",
+            "status": "open"
+          },
+          {
+            "id": "T-2",
+            "subject": "Refund request",
+            "status": "resolved"
+          },
+          {
+            "id": "T-3",
+            "subject": "Password reset",
+            "status": "open"
+          }
+        ],
+        "output": {
+          "open": [
+            {
+              "id": "T-1",
+              "subject": "Login issue",
+              "status": "open"
+            },
+            {
+              "id": "T-3",
+              "subject": "Password reset",
+              "status": "open"
+            }
+          ],
+          "pending": [],
+          "resolved": [
+            {
+              "id": "T-2",
+              "subject": "Refund request",
+              "status": "resolved"
+            }
+          ]
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-02/014-group-tickets-by-status.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-02/014-group-tickets-by-status.test.ts"
+    ],
+    "hiddenTestContract": [
+      "All three keys are always present.",
+      "Unknown statuses are not introduced.",
+      "Grouped arrays preserve source order."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D2-E05",
+    "title": "Count tickets by assignee",
+    "day": 2,
+    "level": 2,
+    "concepts": [
+      "map",
+      "counting",
+      "normalization"
+    ],
+    "prerequisites": [
+      "D1-E02"
+    ],
+    "context": "combined",
+    "objective": "Count how many tickets each assignee owns, with a shared bucket for unassigned tickets.",
+    "requirements": [
+      "Count every ticket exactly once.",
+      "Normalize null, undefined, and blank assignee values to Unassigned.",
+      "Return the counts in a deterministic Map order.",
+      "Add one learner-authored test for an unassigned or tie case."
+    ],
+    "constraints": [
+      "Order the Map by count descending, then assignee name ascending.",
+      "The input array must not be mutated.",
+      "The returned value must be a Map."
+    ],
+    "examples": [
+      {
+        "input": [
+          {
+            "id": "T-1",
+            "assignee": "Ava"
+          },
+          {
+            "id": "T-2",
+            "assignee": null
+          },
+          {
+            "id": "T-3",
+            "assignee": "Bo"
+          },
+          {
+            "id": "T-4",
+            "assignee": "Ava"
+          },
+          {
+            "id": "T-5",
+            "assignee": " "
+          }
+        ],
+        "output": [
+          [
+            "Ava",
+            2
+          ],
+          [
+            "Unassigned",
+            2
+          ],
+          [
+            "Bo",
+            1
+          ]
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-02/015-count-tickets-by-assignee.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-02/015-count-tickets-by-assignee.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Blank and null assignees normalize to Unassigned.",
+      "Tie counts use alphabetical assignee order.",
+      "The output is a Map whose iteration order is stable."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D2-E06",
+    "title": "Merge contacts by email",
+    "day": 2,
+    "level": 3,
+    "concepts": [
+      "objects",
+      "map",
+      "deduplication",
+      "sorting",
+      "filtering"
+    ],
+    "prerequisites": [
+      "D1-E02"
+    ],
+    "context": "production",
+    "objective": "Keep the newest subscribed contact for each email and sort the survivors by name.",
+    "requirements": [
+      "Ignore contacts where subscribed is false.",
+      "Deduplicate by email, keeping the latest updatedAt value.",
+      "If two matching emails share the same updatedAt, keep the first one encountered.",
+      "Sort the remaining contacts by lastName, then firstName, then email.",
+      "Add one learner-authored test for a duplicate email tie."
+    ],
+    "constraints": [
+      "The input array and contact objects must stay unchanged.",
+      "Ordering is deterministic for equal data.",
+      "The newest valid record wins for duplicate emails."
+    ],
+    "examples": [
+      {
+        "input": [
+          {
+            "id": "c1",
+            "firstName": "Ari",
+            "lastName": "Ng",
+            "email": "ari@example.com",
+            "updatedAt": "2024-05-01T12:00:00.000Z",
+            "subscribed": true
+          },
+          {
+            "id": "c2",
+            "firstName": "Bea",
+            "lastName": "Lopez",
+            "email": "bea@example.com",
+            "updatedAt": "2024-05-02T12:00:00.000Z",
+            "subscribed": false
+          },
+          {
+            "id": "c3",
+            "firstName": "Ari",
+            "lastName": "Nielsen",
+            "email": "ari@example.com",
+            "updatedAt": "2024-05-03T12:00:00.000Z",
+            "subscribed": true
+          },
+          {
+            "id": "c4",
+            "firstName": "Cal",
+            "lastName": "Ng",
+            "email": "cal@example.com",
+            "updatedAt": "2024-05-03T12:00:00.000Z",
+            "subscribed": true
+          }
+        ],
+        "output": [
+          {
+            "id": "c4",
+            "firstName": "Cal",
+            "lastName": "Ng",
+            "email": "cal@example.com",
+            "updatedAt": "2024-05-03T12:00:00.000Z",
+            "subscribed": true
+          },
+          {
+            "id": "c3",
+            "firstName": "Ari",
+            "lastName": "Nielsen",
+            "email": "ari@example.com",
+            "updatedAt": "2024-05-03T12:00:00.000Z",
+            "subscribed": true
+          }
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-02/016-merge-contacts-by-email.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-02/016-merge-contacts-by-email.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Unsubscribed contacts are excluded.",
+      "Duplicate emails keep the latest updated contact.",
+      "Equal timestamps fall back to the first encountered record."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D2-E07",
+    "title": "Collect unique product tags",
+    "day": 2,
+    "level": 3,
+    "concepts": [
+      "arrays",
+      "set",
+      "flattening",
+      "deduplication",
+      "sorting"
+    ],
+    "prerequisites": [
+      "D1-E01"
+    ],
+    "context": "combined",
+    "objective": "Gather tags from active products and return a cleaned alphabetical list.",
+    "requirements": [
+      "Use only products where discontinued is false.",
+      "Trim every tag, discard blanks, and remove duplicates.",
+      "Return the final unique tags in alphabetical order.",
+      "Add one learner-authored test for repeated or blank tags."
+    ],
+    "constraints": [
+      "The input array and product objects must not change.",
+      "The output order is alphabetical, not source order.",
+      "Duplicate tags are compared after trimming."
+    ],
+    "examples": [
+      {
+        "input": [
+          {
+            "sku": "P-1",
+            "name": "Keyboard",
+            "discontinued": false,
+            "tags": [
+              " office",
+              "peripheral",
+              ""
+            ]
+          },
+          {
+            "sku": "P-2",
+            "name": "Mouse",
+            "discontinued": true,
+            "tags": [
+              "peripheral",
+              "wireless"
+            ]
+          },
+          {
+            "sku": "P-3",
+            "name": "Monitor",
+            "discontinued": false,
+            "tags": [
+              "display",
+              "office"
+            ]
+          }
+        ],
+        "output": [
+          "display",
+          "office",
+          "peripheral"
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-02/017-collect-unique-product-tags.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-02/017-collect-unique-product-tags.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Discontinued products do not contribute tags.",
+      "Blank tags are removed after trimming.",
+      "The result is deterministic for the same input."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D2-E08",
+    "title": "Group events by day",
+    "day": 2,
+    "level": 3,
+    "concepts": [
+      "objects",
+      "grouping",
+      "sorting",
+      "dates"
+    ],
+    "prerequisites": [
+      "D1-E02"
+    ],
+    "context": "production",
+    "objective": "Bucket audit events by UTC day and keep the day keys in chronological order.",
+    "requirements": [
+      "Group events by their UTC calendar day.",
+      "Sort the day keys from earliest to latest.",
+      "Keep the original event order inside each day bucket.",
+      "Add one learner-authored test for a day key boundary."
+    ],
+    "constraints": [
+      "Use the YYYY-MM-DD date part of each ISO timestamp.",
+      "Do not reorder events inside a day bucket.",
+      "The input array must remain unchanged."
+    ],
+    "examples": [
+      {
+        "input": [
+          {
+            "id": "e1",
+            "kind": "comment",
+            "timestamp": "2024-05-02T23:30:00.000Z"
+          },
+          {
+            "id": "e2",
+            "kind": "status",
+            "timestamp": "2024-05-01T10:00:00.000Z"
+          },
+          {
+            "id": "e3",
+            "kind": "comment",
+            "timestamp": "2024-05-02T12:00:00.000Z"
+          }
+        ],
+        "output": {
+          "2024-05-01": [
+            {
+              "id": "e2",
+              "kind": "status",
+              "timestamp": "2024-05-01T10:00:00.000Z"
+            }
+          ],
+          "2024-05-02": [
+            {
+              "id": "e1",
+              "kind": "comment",
+              "timestamp": "2024-05-02T23:30:00.000Z"
+            },
+            {
+              "id": "e3",
+              "kind": "comment",
+              "timestamp": "2024-05-02T12:00:00.000Z"
+            }
+          ]
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-02/018-group-events-by-day.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-02/018-group-events-by-day.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The day keys are sorted chronologically.",
+      "Events stay in source order within each day.",
+      "The input array is not mutated."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D2-E09",
+    "title": "Build the team directory",
+    "day": 2,
+    "level": 3,
+    "concepts": [
+      "objects",
+      "grouping",
+      "deduplication",
+      "sorting",
+      "records"
+    ],
+    "prerequisites": [
+      "D1-E02"
+    ],
+    "context": "production",
+    "objective": "Produce one row per team after removing stale and inactive member records.",
+    "requirements": [
+      "Keep only active members.",
+      "Deduplicate members by id, keeping the most recently updated record.",
+      "Sort the team rows alphabetically by team name.",
+      "Sort the member names alphabetically inside each team row.",
+      "Add one learner-authored test for a duplicate id or inactive record."
+    ],
+    "constraints": [
+      "The newest updated record wins for duplicate member ids.",
+      "The input array and member objects must not be mutated.",
+      "Team rows and member names are both deterministic."
+    ],
+    "examples": [
+      {
+        "input": [
+          {
+            "id": "m1",
+            "displayName": "Ava",
+            "team": "Platform",
+            "updatedAt": "2024-05-01T10:00:00.000Z",
+            "active": true
+          },
+          {
+            "id": "m2",
+            "displayName": "Bo",
+            "team": "Design",
+            "updatedAt": "2024-05-02T10:00:00.000Z",
+            "active": false
+          },
+          {
+            "id": "m1",
+            "displayName": "Ava Stone",
+            "team": "Platform",
+            "updatedAt": "2024-05-03T10:00:00.000Z",
+            "active": true
+          },
+          {
+            "id": "m3",
+            "displayName": "Cy",
+            "team": "Design",
+            "updatedAt": "2024-05-01T10:00:00.000Z",
+            "active": true
+          },
+          {
+            "id": "m4",
+            "displayName": "Dee",
+            "team": "Design",
+            "updatedAt": "2024-05-04T10:00:00.000Z",
+            "active": true
+          }
+        ],
+        "output": [
+          {
+            "team": "Design",
+            "members": [
+              "Cy",
+              "Dee"
+            ]
+          },
+          {
+            "team": "Platform",
+            "members": [
+              "Ava Stone"
+            ]
+          }
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-02/019-build-team-directory.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-02/019-build-team-directory.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Inactive members are excluded from the directory.",
+      "Duplicate ids keep the latest updated record.",
+      "Rows and names are sorted deterministically."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D2-E10",
+    "title": "Prepare the leaderboard",
+    "day": 2,
+    "level": 4,
+    "concepts": [
+      "map",
+      "deduplication",
+      "sorting",
+      "filtering",
+      "records"
+    ],
+    "prerequisites": [
+      "D1-E02"
+    ],
+    "context": "production",
+    "objective": "Turn raw score entries into ranked leaderboard rows with deterministic tie handling.",
+    "requirements": [
+      "Keep only active entries.",
+      "Deduplicate by playerId, keeping the highest score; if scores tie, keep the newer updatedAt value.",
+      "Sort the final rows by score descending, then displayName ascending, then playerId ascending.",
+      "Assign ranks starting at 1 after sorting.",
+      "Add one learner-authored test for a duplicate or score-tie case."
+    ],
+    "constraints": [
+      "The input array and entry objects must not be mutated.",
+      "The same input must always produce the same ranks.",
+      "Tie handling must be explicit and deterministic."
+    ],
+    "examples": [
+      {
+        "input": [
+          {
+            "playerId": "p1",
+            "displayName": "Zoe",
+            "score": 18,
+            "updatedAt": "2024-05-01T09:00:00.000Z",
+            "active": true
+          },
+          {
+            "playerId": "p2",
+            "displayName": "Ana",
+            "score": 22,
+            "updatedAt": "2024-05-01T09:00:00.000Z",
+            "active": false
+          },
+          {
+            "playerId": "p1",
+            "displayName": "Zoe",
+            "score": 24,
+            "updatedAt": "2024-05-03T09:00:00.000Z",
+            "active": true
+          },
+          {
+            "playerId": "p3",
+            "displayName": "Bea",
+            "score": 24,
+            "updatedAt": "2024-05-02T09:00:00.000Z",
+            "active": true
+          },
+          {
+            "playerId": "p4",
+            "displayName": "Cal",
+            "score": 24,
+            "updatedAt": "2024-05-02T09:00:00.000Z",
+            "active": true
+          }
+        ],
+        "output": [
+          {
+            "rank": 1,
+            "playerId": "p3",
+            "displayName": "Bea",
+            "score": 24
+          },
+          {
+            "rank": 2,
+            "playerId": "p4",
+            "displayName": "Cal",
+            "score": 24
+          },
+          {
+            "rank": 3,
+            "playerId": "p1",
+            "displayName": "Zoe",
+            "score": 24
+          }
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-02/020-prepare-leaderboard.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-02/020-prepare-leaderboard.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Inactive entries are excluded.",
+      "Duplicate player ids keep the best qualifying record.",
+      "Ranks are assigned after the final deterministic sort."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D3-E01",
+    "title": "Offset numbers with a local return value",
+    "day": 3,
+    "level": 1,
+    "concepts": [
+      "functions",
+      "scope",
+      "arrays",
+      "mapping"
+    ],
+    "prerequisites": [
+      "D1-E01",
+      "D1-E02"
+    ],
+    "context": "isolated",
+    "objective": "Shift every number by the same offset and return a fresh array.",
+    "requirements": [
+      "Return each value increased by the provided offset.",
+      "Preserve the original order.",
+      "Leave the input array unchanged."
+    ],
+    "constraints": [
+      "Do not mutate the input array.",
+      "Handle empty arrays without special setup."
+    ],
+    "examples": [
+      {
+        "input": {
+          "values": [
+            2,
+            -1,
+            5
+          ],
+          "offset": 3
+        },
+        "output": [
+          5,
+          2,
+          8
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-03/021-offset-numbers.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-03/021-offset-numbers.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The original array must stay unchanged.",
+      "The result must be a new array.",
+      "Repeated calls must not leak state between runs."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D3-E02",
+    "title": "Append a tag without mutating the profile",
+    "day": 3,
+    "level": 2,
+    "concepts": [
+      "references",
+      "immutability",
+      "objects",
+      "arrays"
+    ],
+    "prerequisites": [
+      "D1-E02",
+      "D2-E01"
+    ],
+    "context": "isolated",
+    "objective": "Add a missing tag to a profile while preserving references on no-op updates.",
+    "requirements": [
+      "Append the tag only when it is missing.",
+      "Return the original profile reference when nothing changes.",
+      "Leave the input object and tags array unchanged.",
+      "Add at least one learner-authored test for the no-op case."
+    ],
+    "constraints": [
+      "Do not mutate the profile or its tags array.",
+      "Keep existing tags in their original order."
+    ],
+    "examples": [
+      {
+        "input": {
+          "profile": {
+            "name": "Ada",
+            "tags": [
+              "typescript"
+            ]
+          },
+          "tag": "vitest"
+        },
+        "output": {
+          "name": "Ada",
+          "tags": [
+            "typescript",
+            "vitest"
+          ]
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-03/022-append-unique-tag.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-03/022-append-unique-tag.test.ts"
+    ],
+    "hiddenTestContract": [
+      "No mutation of the input profile or nested arrays.",
+      "When the tag already exists, return the same profile reference.",
+      "When the tag is added, create a new tags array."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D3-E03",
+    "title": "Toggle a selected id immutably",
+    "day": 3,
+    "level": 2,
+    "concepts": [
+      "mutation",
+      "immutability",
+      "arrays",
+      "filtering"
+    ],
+    "prerequisites": [
+      "D1-E02",
+      "D2-E02"
+    ],
+    "context": "combined",
+    "objective": "Treat the selected ids as a set-like list and add or remove one entry.",
+    "requirements": [
+      "Add the id when it is missing.",
+      "Remove the id when it is already present.",
+      "Preserve the order of the other ids.",
+      "Add at least one learner-authored test for the remove case."
+    ],
+    "constraints": [
+      "Do not mutate the input array.",
+      "Keep the output free of duplicate ids."
+    ],
+    "examples": [
+      {
+        "input": {
+          "selectedIds": [
+            "alpha",
+            "gamma"
+          ],
+          "id": "beta"
+        },
+        "output": [
+          "alpha",
+          "gamma",
+          "beta"
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-03/023-toggle-selection.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-03/023-toggle-selection.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The source array must remain unchanged.",
+      "Removal must preserve the order of remaining ids.",
+      "The result must not introduce duplicates."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D3-E04",
+    "title": "Filter active users by a search query",
+    "day": 3,
+    "level": 2,
+    "concepts": [
+      "pure transformations",
+      "filtering",
+      "case handling",
+      "references"
+    ],
+    "prerequisites": [
+      "D1-E03",
+      "D2-E03"
+    ],
+    "context": "combined",
+    "objective": "Return only active users whose names match a case-insensitive query.",
+    "requirements": [
+      "Ignore inactive users.",
+      "Match names case-insensitively after trimming the query.",
+      "Return the original user objects in their original order.",
+      "Add at least one learner-authored test for the empty-query case."
+    ],
+    "constraints": [
+      "Do not mutate the input array or user objects.",
+      "An empty or whitespace-only query matches all active users."
+    ],
+    "examples": [
+      {
+        "input": {
+          "users": [
+            {
+              "id": "1",
+              "name": "Maya",
+              "active": true
+            },
+            {
+              "id": "2",
+              "name": "Noah",
+              "active": false
+            },
+            {
+              "id": "3",
+              "name": "ANNA",
+              "active": true
+            }
+          ],
+          "query": "an"
+        },
+        "output": [
+          {
+            "id": "3",
+            "name": "ANNA",
+            "active": true
+          }
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-03/024-filter-active-users.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-03/024-filter-active-users.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The input list and returned user objects must not be cloned unnecessarily.",
+      "Case-insensitive matching must be deterministic.",
+      "Whitespace around the query should not change the result."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D3-E05",
+    "title": "Dedupe and rank tasks with tie rules",
+    "day": 3,
+    "level": 3,
+    "concepts": [
+      "deduplication",
+      "sorting",
+      "references",
+      "immutability"
+    ],
+    "prerequisites": [
+      "D2-E03",
+      "D2-E04"
+    ],
+    "context": "combined",
+    "objective": "Keep the newest task per id and rank the remaining tasks deterministically.",
+    "requirements": [
+      "Keep one task per id, choosing the newest updatedAt value.",
+      "If updatedAt ties, keep the later task from the input.",
+      "Sort by priority descending, then title ascending, then id ascending.",
+      "Add at least one learner-authored test for the duplicate-and-tie case."
+    ],
+    "constraints": [
+      "Do not mutate the input array or task objects.",
+      "Return the original task object for each kept task."
+    ],
+    "examples": [
+      {
+        "input": {
+          "tasks": [
+            {
+              "id": "a",
+              "title": "Gamma",
+              "priority": 2,
+              "updatedAt": 4
+            },
+            {
+              "id": "b",
+              "title": "Alpha",
+              "priority": 3,
+              "updatedAt": 2
+            },
+            {
+              "id": "a",
+              "title": "Delta",
+              "priority": 3,
+              "updatedAt": 4
+            }
+          ]
+        },
+        "output": [
+          {
+            "id": "b",
+            "title": "Alpha",
+            "priority": 3,
+            "updatedAt": 2
+          },
+          {
+            "id": "a",
+            "title": "Delta",
+            "priority": 3,
+            "updatedAt": 4
+          }
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-03/025-dedupe-and-rank-tasks.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-03/025-dedupe-and-rank-tasks.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Tie handling must be explicit and deterministic.",
+      "The original array must stay unchanged.",
+      "Kept items should stay as references to the original objects."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D3-E06",
+    "title": "Apply cart actions immutably",
+    "day": 3,
+    "level": 3,
+    "concepts": [
+      "state transitions",
+      "reducer-like logic",
+      "objects",
+      "arrays"
+    ],
+    "prerequisites": [
+      "D2-E04",
+      "D2-E05"
+    ],
+    "context": "combined",
+    "objective": "Update cart quantities through add, set, and remove actions without mutation.",
+    "requirements": [
+      "Add quantities to an existing item or append a new one.",
+      "If a set action targets a missing id with a positive quantity, append it.",
+      "Remove an item when its set quantity is zero or below.",
+      "Return the same state reference when the action changes nothing.",
+      "Add at least one learner-authored test for the no-op action."
+    ],
+    "constraints": [
+      "Do not mutate the state object or any item object.",
+      "Preserve the order of untouched items."
+    ],
+    "examples": [
+      {
+        "input": {
+          "state": {
+            "items": [
+              {
+                "id": "tea",
+                "quantity": 1
+              }
+            ]
+          },
+          "action": {
+            "type": "add",
+            "id": "tea",
+            "quantity": 3
+          }
+        },
+        "output": {
+          "items": [
+            {
+              "id": "tea",
+              "quantity": 4
+            }
+          ]
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-03/026-apply-cart-action.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-03/026-apply-cart-action.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Missing ids should not create accidental placeholders.",
+      "No-op actions should preserve object identity.",
+      "Existing items not touched by the action should keep their references when possible."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D3-E07",
+    "title": "Transition an order through allowed states",
+    "day": 3,
+    "level": 3,
+    "concepts": [
+      "state transitions",
+      "immutability",
+      "tie-breakers",
+      "references"
+    ],
+    "prerequisites": [
+      "D2-E05",
+      "D3-E06"
+    ],
+    "context": "combined",
+    "objective": "Move an order through allowed statuses and append notes immutably.",
+    "requirements": [
+      "Allow place, ship, cancel, and note events.",
+      "Reject invalid status transitions by returning the original order reference.",
+      "Append notes without mutating the existing notes array.",
+      "Add at least one learner-authored test for the rejected transition."
+    ],
+    "constraints": [
+      "Do not mutate the order or its notes array.",
+      "Ship should record the provided timestamp only when the transition is allowed."
+    ],
+    "examples": [
+      {
+        "input": {
+          "order": {
+            "id": "ord-1",
+            "status": "draft",
+            "notes": [
+              "created"
+            ],
+            "shippedAt": null
+          },
+          "event": {
+            "type": "place"
+          }
+        },
+        "output": {
+          "id": "ord-1",
+          "status": "placed",
+          "notes": [
+            "created"
+          ],
+          "shippedAt": null
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-03/027-transition-order.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-03/027-transition-order.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Invalid transitions must preserve the original reference.",
+      "Notes must stay in their original order.",
+      "A successful transition may change only the documented fields."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D3-E08",
+    "title": "Apply payments across accounts",
+    "day": 3,
+    "level": 3,
+    "concepts": [
+      "reducing",
+      "accumulation",
+      "references",
+      "immutability"
+    ],
+    "prerequisites": [
+      "D2-E02",
+      "D3-E05"
+    ],
+    "context": "combined",
+    "objective": "Accumulate payment amounts into matching accounts without mutating the inputs.",
+    "requirements": [
+      "Apply payments in input order.",
+      "Ignore payments whose account id does not exist.",
+      "Reuse untouched account objects when possible.",
+      "Add at least one learner-authored test for the ignored-account case."
+    ],
+    "constraints": [
+      "Do not mutate the accounts or payments arrays.",
+      "Keep the accounts in their original order."
+    ],
+    "examples": [
+      {
+        "input": {
+          "accounts": [
+            {
+              "id": "checking",
+              "balance": 10
+            },
+            {
+              "id": "savings",
+              "balance": 20
+            }
+          ],
+          "payments": [
+            {
+              "accountId": "checking",
+              "amount": 5
+            },
+            {
+              "accountId": "savings",
+              "amount": 3
+            }
+          ]
+        },
+        "output": [
+          {
+            "id": "checking",
+            "balance": 15
+          },
+          {
+            "id": "savings",
+            "balance": 23
+          }
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-03/028-apply-payments.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-03/028-apply-payments.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Repeated payments to the same account must accumulate in order.",
+      "Unchanged accounts should keep their object references when possible.",
+      "Missing accounts must be ignored rather than created."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D3-E09",
+    "title": "Apply board actions to nested lanes",
+    "day": 3,
+    "level": 4,
+    "concepts": [
+      "nested state",
+      "reducer-like logic",
+      "sorting",
+      "immutability"
+    ],
+    "prerequisites": [
+      "D3-E06",
+      "D3-E07"
+    ],
+    "context": "production",
+    "objective": "Move or rename board cards while preserving lane order and immutability.",
+    "requirements": [
+      "Move a card only when it exists in the declared source lane.",
+      "Insert moved cards at the end of the destination lane.",
+      "Rename a card wherever it currently lives.",
+      "Return the original board state when an action changes nothing.",
+      "Add at least one learner-authored test for the invalid move case."
+    ],
+    "constraints": [
+      "Do not mutate any lane array or card object.",
+      "Keep the relative order of cards that are not moved."
+    ],
+    "examples": [
+      {
+        "input": {
+          "state": {
+            "backlog": [
+              {
+                "id": "task-1",
+                "title": "Draft"
+              }
+            ],
+            "active": [
+              {
+                "id": "task-2",
+                "title": "Build"
+              }
+            ],
+            "done": []
+          },
+          "action": {
+            "type": "move",
+            "id": "task-1",
+            "from": "backlog",
+            "to": "active"
+          }
+        },
+        "output": {
+          "backlog": [],
+          "active": [
+            {
+              "id": "task-2",
+              "title": "Build"
+            },
+            {
+              "id": "task-1",
+              "title": "Draft"
+            }
+          ],
+          "done": []
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-03/029-apply-board-action.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-03/029-apply-board-action.test.ts"
+    ],
+    "hiddenTestContract": [
+      "A move must fail when the source lane does not contain the card.",
+      "Rename should not duplicate or relocate cards.",
+      "No-op actions must preserve the original state reference."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D3-E10",
+    "title": "Reduce roster updates into a stable member list",
+    "day": 3,
+    "level": 4,
+    "concepts": [
+      "domain rules",
+      "state transitions",
+      "references",
+      "reducer-like logic"
+    ],
+    "prerequisites": [
+      "D3-E08",
+      "D2-E04"
+    ],
+    "context": "production",
+    "objective": "Upsert, deactivate, or remove members and keep the roster sorted by business rules.",
+    "requirements": [
+      "Sort active members before inactive members, then sort each group by role, then name, then id.",
+      "Replace an existing member on upsert instead of duplicating it.",
+      "Add at least one learner-authored test for the stable-ordering rule."
+    ],
+    "constraints": [
+      "Do not mutate the incoming state or members array.",
+      "Return the original state when the action makes no change."
+    ],
+    "examples": [
+      {
+        "input": {
+          "state": {
+            "members": [
+              {
+                "id": "3",
+                "name": "Zoe",
+                "role": "viewer",
+                "active": true
+              },
+              {
+                "id": "1",
+                "name": "Maya",
+                "role": "editor",
+                "active": false
+              }
+            ]
+          },
+          "action": {
+            "type": "upsert",
+            "member": {
+              "id": "2",
+              "name": "Ari",
+              "role": "owner",
+              "active": true
+            }
+          }
+        },
+        "output": {
+          "members": [
+            {
+              "id": "2",
+              "name": "Ari",
+              "role": "owner",
+              "active": true
+            },
+            {
+              "id": "3",
+              "name": "Zoe",
+              "role": "viewer",
+              "active": true
+            },
+            {
+              "id": "1",
+              "name": "Maya",
+              "role": "editor",
+              "active": false
+            }
+          ]
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-03/030-reduce-roster-action.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-03/030-reduce-roster-action.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The roster must stay deterministic across reruns.",
+      "No-op removals or unchanged upserts must preserve the original state reference.",
+      "Sorting ties must be resolved by the documented field order."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D4-E01",
+    "title": "Load Search Options",
+    "day": 4,
+    "level": 2,
+    "concepts": [
+      "promises",
+      "async-await",
+      "filtering",
+      "sorting",
+      "immutability"
+    ],
+    "prerequisites": [
+      "D1-E09"
+    ],
+    "context": "combined",
+    "objective": "Await a search loader and return normalized visible options.",
+    "requirements": [
+      "Trim the query before calling the loader.",
+      "Include only active users whose name or alias contains the trimmed query, case-insensitively.",
+      "If the trimmed query is empty, include all active users.",
+      "Return options sorted by label ascending, then id ascending.",
+      "Do not mutate the loader result array or its records."
+    ],
+    "constraints": [
+      "Use the observable async result rather than timers.",
+      "Return objects shaped exactly as { id, label }."
+    ],
+    "examples": [
+      {
+        "input": {
+          "query": " al ",
+          "users": [
+            {
+              "id": "u2",
+              "name": "Sally",
+              "active": true,
+              "aliases": [
+                "Ally"
+              ]
+            },
+            {
+              "id": "u1",
+              "name": "Alice",
+              "active": true,
+              "aliases": [
+                "Ace"
+              ]
+            },
+            {
+              "id": "u3",
+              "name": "ALBERT",
+              "active": false,
+              "aliases": [
+                "Al"
+              ]
+            }
+          ]
+        },
+        "output": [
+          {
+            "id": "u1",
+            "label": "Alice"
+          },
+          {
+            "id": "u2",
+            "label": "Sally"
+          }
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-04/031-load-search-options.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-04/031-load-search-options.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Whitespace-only queries still return active users.",
+      "Alias matches are case-insensitive.",
+      "Sorting is deterministic for equal labels.",
+      "The source array and records are preserved."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D4-E02",
+    "title": "Load Search Options Result",
+    "day": 4,
+    "level": 2,
+    "concepts": [
+      "promises",
+      "async-await",
+      "error-handling",
+      "filtering",
+      "sorting"
+    ],
+    "prerequisites": [
+      "D4-E01"
+    ],
+    "context": "combined",
+    "objective": "Convert async success and failure into an explicit result object.",
+    "requirements": [
+      "Reuse the same trimming, filtering, and sorting contract as D4-E01.",
+      "Return { status: 'success', options } on success.",
+      "Return { status: 'error', message } when the loader rejects.",
+      "Use the rejection message for Error values and 'Unknown error' for non-Error rejections.",
+      "Do not reject because of the loader failure."
+    ],
+    "constraints": [
+      "Keep the return contract deterministic.",
+      "Do not mutate the loader result array or its records."
+    ],
+    "examples": [
+      {
+        "input": {
+          "query": "al",
+          "loaderOutcome": "rejects with Error('API unavailable')"
+        },
+        "output": {
+          "status": "error",
+          "message": "API unavailable"
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-04/032-load-search-options-result.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-04/032-load-search-options-result.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Successful output still follows the D4-E01 normalization rules.",
+      "Non-Error rejections map to 'Unknown error'.",
+      "The function itself does not reject when the loader rejects."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D4-E03",
+    "title": "Run Search Request",
+    "day": 4,
+    "level": 3,
+    "concepts": [
+      "async-state",
+      "promises",
+      "error-handling",
+      "immutability",
+      "filtering",
+      "sorting"
+    ],
+    "prerequisites": [
+      "D4-E02"
+    ],
+    "context": "production",
+    "objective": "Report loading and final request state through an immutable callback contract.",
+    "requirements": [
+      "Emit a loading state immediately with the trimmed query, empty options, and null errorMessage.",
+      "Then emit either a success state with normalized options or an error state with a message.",
+      "Reuse the same trimming, filtering, and sorting contract as D4-E01.",
+      "Resolve after the final state is emitted, even when the loader fails.",
+      "Emit fresh state objects instead of mutating a previous state snapshot."
+    ],
+    "constraints": [
+      "Do not depend on real-time waits.",
+      "Do not reject because of the loader failure."
+    ],
+    "examples": [
+      {
+        "input": {
+          "query": "be",
+          "loaderOutcome": "rejects with Error('Network down')"
+        },
+        "output": [
+          {
+            "status": "loading",
+            "query": "be",
+            "options": [],
+            "errorMessage": null
+          },
+          {
+            "status": "error",
+            "query": "be",
+            "options": [],
+            "errorMessage": "Network down"
+          }
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-04/033-run-search-request.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-04/033-run-search-request.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Loading is emitted before the loader settles.",
+      "Previous emitted states are not mutated later.",
+      "Final success or error reflects the trimmed query."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D4-E04",
+    "title": "Load Selected Options",
+    "day": 4,
+    "level": 3,
+    "concepts": [
+      "concurrency",
+      "promises",
+      "deduplication",
+      "immutability",
+      "mapping"
+    ],
+    "prerequisites": [
+      "D4-E03"
+    ],
+    "context": "combined",
+    "objective": "Fetch selected users concurrently and map active results in first-seen id order.",
+    "requirements": [
+      "Request each unique id at most once.",
+      "Start the unique requests without waiting for earlier ids to finish.",
+      "Skip inactive users.",
+      "Return active options in the first-seen order of the input ids.",
+      "Do not mutate the ids array."
+    ],
+    "constraints": [
+      "Preserve duplicates only for request coordination, not the output list.",
+      "Return objects shaped exactly as { id, label }."
+    ],
+    "examples": [
+      {
+        "input": {
+          "ids": [
+            "b",
+            "a",
+            "b"
+          ],
+          "resolvedUsers": {
+            "a": {
+              "id": "a",
+              "name": "Alice",
+              "active": true
+            },
+            "b": {
+              "id": "b",
+              "name": "Bea",
+              "active": true
+            }
+          }
+        },
+        "output": [
+          {
+            "id": "b",
+            "label": "Bea"
+          },
+          {
+            "id": "a",
+            "label": "Alice"
+          }
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-04/034-load-selected-options.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-04/034-load-selected-options.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Unique requests begin before slower ones settle.",
+      "Inactive users are filtered out after loading.",
+      "The ids input array is preserved."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D4-E05",
+    "title": "Load Selected Options Settled",
+    "day": 4,
+    "level": 4,
+    "concepts": [
+      "concurrency",
+      "partial-failure",
+      "promises",
+      "deduplication",
+      "immutability"
+    ],
+    "prerequisites": [
+      "D4-E04"
+    ],
+    "context": "production",
+    "objective": "Keep successful selections when some concurrent lookups fail.",
+    "requirements": [
+      "Reuse the unique concurrent loading contract from D4-E04.",
+      "Return successful active options and failed ids in separate arrays.",
+      "Preserve first-seen id order in both arrays.",
+      "Do not reject because one or more individual requests fail.",
+      "Add one learner-written test for a failure-path ordering case."
+    ],
+    "constraints": [
+      "Each duplicate id should affect the output at most once.",
+      "Inactive successful users are skipped rather than treated as failures."
+    ],
+    "examples": [
+      {
+        "input": {
+          "ids": [
+            "a",
+            "b",
+            "a",
+            "c"
+          ],
+          "outcomes": {
+            "a": "active success",
+            "b": "rejects",
+            "c": "inactive success"
+          }
+        },
+        "output": {
+          "options": [
+            {
+              "id": "a",
+              "label": "Alice"
+            }
+          ],
+          "failedIds": [
+            "b"
+          ]
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-04/035-load-selected-options-settled.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-04/035-load-selected-options-settled.test.ts"
+    ],
+    "hiddenTestContract": [
+      "The batch settles even when multiple requests reject.",
+      "Failed ids are unique and first-seen ordered.",
+      "Successful active users keep the input id order."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D4-E06",
+    "title": "Load Search Options With Signal",
+    "day": 4,
+    "level": 4,
+    "concepts": [
+      "cancellation",
+      "abort-signal",
+      "promises",
+      "filtering",
+      "sorting"
+    ],
+    "prerequisites": [
+      "D4-E02",
+      "D4-E03"
+    ],
+    "context": "production",
+    "objective": "Thread an AbortSignal through a search request and honor cancellation.",
+    "requirements": [
+      "Trim the query before calling the loader.",
+      "Reject immediately with signal.reason when the signal is already aborted.",
+      "Pass the provided signal to the loader.",
+      "If the signal aborts before the loader settles, reject with signal.reason and ignore later resolution.",
+      "On success, reuse the same filtering and sorting contract as D4-E01.",
+      "Add one learner-written test for an abort path."
+    ],
+    "constraints": [
+      "Do not use arbitrary delays.",
+      "Do not mutate the loader result array or its records."
+    ],
+    "examples": [
+      {
+        "input": {
+          "query": "al",
+          "signal": "already aborted with Error('Stopped')"
+        },
+        "output": "rejects with the same Error instance"
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-04/036-load-search-options-with-signal.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-04/036-load-search-options-with-signal.test.ts"
+    ],
+    "hiddenTestContract": [
+      "No loader call occurs when the signal is already aborted.",
+      "Abort uses the provided signal and not a separate timer.",
+      "Late resolution after abort does not become a success result."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D4-E07",
+    "title": "Latest Search Store",
+    "day": 4,
+    "level": 4,
+    "concepts": [
+      "stale-response-protection",
+      "async-state",
+      "promises",
+      "immutability",
+      "error-handling"
+    ],
+    "prerequisites": [
+      "D4-E03",
+      "D4-E06"
+    ],
+    "context": "production",
+    "objective": "Coordinate overlapping searches so only the latest request may update state.",
+    "requirements": [
+      "Expose an initial idle state with empty query, empty options, and null errorMessage.",
+      "When search(query) starts, trim the query and move state to loading immediately.",
+      "When a newer search starts before an older one settles, ignore the older success or error result.",
+      "When the latest request succeeds, store normalized options using the D4-E01 filtering and sorting contract.",
+      "search() should resolve after its own request settles or becomes stale, without rejecting because of request failure.",
+      "Add one learner-written test for a stale-response case."
+    ],
+    "constraints": [
+      "Replace state immutably instead of mutating prior snapshots.",
+      "Do not use timers to decide which response is latest."
+    ],
+    "examples": [
+      {
+        "input": {
+          "requests": [
+            "al",
+            "be"
+          ],
+          "settleOrder": [
+            "be success",
+            "al success"
+          ]
+        },
+        "output": {
+          "status": "success",
+          "query": "be"
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-04/037-latest-search-store.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-04/037-latest-search-store.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Stale successes are ignored.",
+      "Stale failures are ignored.",
+      "Earlier state snapshots are not mutated later."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D4-E08",
+    "title": "Shared User Loader",
+    "day": 4,
+    "level": 4,
+    "concepts": [
+      "concurrency",
+      "request-deduplication",
+      "caching",
+      "promises",
+      "immutability"
+    ],
+    "prerequisites": [
+      "D4-E04",
+      "D4-E05"
+    ],
+    "context": "production",
+    "objective": "Share in-flight work for duplicate lookups and cache stable results.",
+    "requirements": [
+      "Return an object with a load(id) method.",
+      "Concurrent load calls for the same id must share one in-flight request.",
+      "Cache a successful normalized result so later calls for the same id do not refetch.",
+      "Cache an inactive user as null.",
+      "Do not cache a rejected request; the next call should retry.",
+      "Add one learner-written test for the retry-after-failure path."
+    ],
+    "constraints": [
+      "Return active users as { id, label }.",
+      "Keep the observable behavior deterministic for repeated calls."
+    ],
+    "examples": [
+      {
+        "input": {
+          "calls": [
+            "load('u1')",
+            "load('u1')"
+          ],
+          "fetchOutcome": {
+            "id": "u1",
+            "name": "Alice",
+            "active": true
+          }
+        },
+        "output": [
+          {
+            "id": "u1",
+            "label": "Alice"
+          },
+          {
+            "id": "u1",
+            "label": "Alice"
+          }
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-04/038-shared-user-loader.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-04/038-shared-user-loader.test.ts"
+    ],
+    "hiddenTestContract": [
+      "In-flight duplicate calls share one loader promise.",
+      "Rejected loads are not cached.",
+      "Inactive users may be cached as null."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D4-E09",
+    "title": "Aborting Latest Search Store",
+    "day": 4,
+    "level": 4,
+    "concepts": [
+      "cancellation",
+      "abort-signal",
+      "stale-response-protection",
+      "async-state",
+      "error-handling"
+    ],
+    "prerequisites": [
+      "D4-E06",
+      "D4-E07"
+    ],
+    "context": "production",
+    "objective": "Actively abort obsolete searches instead of only ignoring stale results.",
+    "requirements": [
+      "Expose the same idle/loading/success/error state shape as D4-E07.",
+      "When search(query) starts, trim the query and abort any previous in-flight request.",
+      "If an aborted older request later rejects or resolves, it must not replace the latest state.",
+      "If the latest request fails for a non-abort reason, store its message in error state.",
+      "search() should resolve after its own request settles or is superseded, without rejecting because of request failure.",
+      "Add one learner-written test for the abort-on-replacement path."
+    ],
+    "constraints": [
+      "Use AbortSignal for cancellation.",
+      "Replace state immutably instead of mutating prior snapshots."
+    ],
+    "examples": [
+      {
+        "input": {
+          "requests": [
+            "al",
+            "be"
+          ],
+          "effect": "starting 'be' aborts 'al'"
+        },
+        "output": {
+          "status": "loading",
+          "query": "be"
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-04/039-aborting-latest-search-store.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-04/039-aborting-latest-search-store.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Previous signals are aborted when replaced.",
+      "Abort-driven failures from stale requests do not become visible errors.",
+      "Latest non-abort failures still surface in state."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D4-E10",
+    "title": "Autocomplete Model",
+    "day": 4,
+    "level": 5,
+    "concepts": [
+      "cancellation",
+      "stale-response-protection",
+      "async-state",
+      "retry",
+      "filtering",
+      "sorting",
+      "immutability"
+    ],
+    "prerequisites": [
+      "D4-E07",
+      "D4-E09"
+    ],
+    "context": "production",
+    "objective": "Integrate trimmed search input, abort coordination, retry, and normalized results in one deterministic model.",
+    "requirements": [
+      "Expose an initial idle state with empty query, empty options, and null errorMessage.",
+      "search(query) must trim the query before using it.",
+      "If the trimmed query is empty, abort any in-flight request, move to idle, and skip the loader call.",
+      "For non-empty queries, start loading, abort the previous in-flight request, and ignore stale results.",
+      "On success, store active matching options using the D4-E01 filtering and sorting contract.",
+      "On a latest non-abort failure, store an error state with the trimmed query and message.",
+      "retry() should repeat the latest non-empty query only when the current state is error.",
+      "search() and retry() should resolve without rejecting because of request failure or cancellation.",
+      "Add one learner-written test for either the empty-query reset path or the retry path."
+    ],
+    "constraints": [
+      "Use AbortSignal instead of arbitrary timeouts.",
+      "Replace state immutably instead of mutating prior snapshots."
+    ],
+    "examples": [
+      {
+        "input": {
+          "sequence": [
+            "search('  al ')",
+            "loader rejects with Error('Server error')",
+            "retry()",
+            "loader resolves with Alice and Sally"
+          ]
+        },
+        "output": {
+          "status": "success",
+          "query": "al",
+          "options": [
+            {
+              "id": "u1",
+              "label": "Alice"
+            },
+            {
+              "id": "u2",
+              "label": "Sally"
+            }
+          ],
+          "errorMessage": null
+        }
+      }
+    ],
+    "starterFiles": [
+      "src/exercises/day-04/040-autocomplete-model.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-04/040-autocomplete-model.test.ts"
+    ],
+    "hiddenTestContract": [
+      "Whitespace-only search returns to idle without a loader call.",
+      "Stale or aborted requests never replace the latest visible state.",
+      "retry() is a no-op outside the error state.",
+      "Normalized success output remains deterministic for equal labels."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D5-E01",
+    "title": "Render sorted product list",
+    "day": 5,
+    "level": 1,
+    "concepts": [
+      "react-rendering",
+      "filtering",
+      "sorting",
+      "immutability"
+    ],
+    "prerequisites": [
+      "D2-E10"
+    ],
+    "context": "react",
+    "objective": "Render a user-facing list from product props without mutating the source array.",
+    "requirements": [
+      "Render only in-stock products.",
+      "Order visible products by name ascending.",
+      "Show each item as visible text in the format Name — $12.34.",
+      "Show No products available. when nothing can be rendered."
+    ],
+    "constraints": [
+      "Do not mutate the input array or product objects.",
+      "Use accessible list semantics and visible empty-state text."
+    ],
+    "examples": [
+      {
+        "input": {
+          "products": [
+            {
+              "id": "p2",
+              "name": "Mouse",
+              "priceCents": 3500,
+              "inStock": false
+            },
+            {
+              "id": "p1",
+              "name": "Cable",
+              "priceCents": 1200,
+              "inStock": true
+            }
+          ]
+        },
+        "output": [
+          "Cable — $12.00"
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/components/501-product-list.tsx"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-05/501-product-list.test.tsx"
+    ],
+    "hiddenTestContract": [
+      "Sorting is deterministic for the same input.",
+      "Out-of-stock products never render.",
+      "The source array and records are preserved."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D5-E02",
+    "title": "Render deduped inventory table",
+    "day": 5,
+    "level": 2,
+    "concepts": [
+      "react-rendering",
+      "deduplication",
+      "sorting",
+      "records",
+      "accessibility"
+    ],
+    "prerequisites": [
+      "D5-E01"
+    ],
+    "context": "react",
+    "objective": "Render a normalized inventory table from partial API-style records.",
+    "requirements": [
+      "Ignore rows missing an id or a displayable name.",
+      "Deduplicate by id, keeping the newest updatedAt record.",
+      "Sort featured rows first, then by name ascending.",
+      "Render an accessible table with Product and Category columns.",
+      "Add one learner-written test for an equal-timestamp or invalid-row case."
+    ],
+    "constraints": [
+      "Do not mutate the input array or records.",
+      "Show No inventory rows. when no valid rows remain."
+    ],
+    "examples": [
+      {
+        "input": {
+          "records": [
+            {
+              "id": "p1",
+              "name": "Notebook",
+              "category": "Office",
+              "featured": false,
+              "updatedAt": "2024-05-01T10:00:00.000Z"
+            },
+            {
+              "id": "p1",
+              "name": "Notebook Pro",
+              "category": "Office",
+              "featured": false,
+              "updatedAt": "2024-05-02T10:00:00.000Z"
+            }
+          ]
+        },
+        "output": [
+          [
+            "Notebook Pro",
+            "Office"
+          ]
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/components/502-inventory-table.tsx"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-05/502-inventory-table.test.tsx"
+    ],
+    "hiddenTestContract": [
+      "Newest valid record wins for duplicate ids.",
+      "Rows with missing ids or blank names are excluded.",
+      "Table ordering is deterministic."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D5-E03",
+    "title": "Searchable product list",
+    "day": 5,
+    "level": 3,
+    "concepts": [
+      "react-state",
+      "filtering",
+      "strings",
+      "derived-state",
+      "sorting"
+    ],
+    "prerequisites": [
+      "D5-E02"
+    ],
+    "context": "react",
+    "objective": "Filter a rendered list from local search input without duplicating source data in state.",
+    "requirements": [
+      "Render a labeled searchbox named Search products.",
+      "Filter visible in-stock products by a case-insensitive name match.",
+      "Keep visible products sorted by name ascending.",
+      "Expose the visible count in a status region.",
+      "Show No matching products. when the current query matches nothing.",
+      "Add one learner-written test for case-insensitive matching or empty search text."
+    ],
+    "constraints": [
+      "Visible data should be derived from props and UI state.",
+      "Do not mutate the source array."
+    ],
+    "examples": [
+      {
+        "input": {
+          "query": "ca",
+          "products": [
+            "Camera",
+            "Cable",
+            "Keyboard"
+          ]
+        },
+        "output": [
+          "Cable",
+          "Camera"
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/components/503-searchable-product-list.tsx"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-05/503-searchable-product-list.test.tsx"
+    ],
+    "hiddenTestContract": [
+      "Matching is case-insensitive.",
+      "Out-of-stock products remain hidden.",
+      "Count text matches the rendered result set."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D5-E04",
+    "title": "Sortable catalog controls",
+    "day": 5,
+    "level": 3,
+    "concepts": [
+      "react-state",
+      "sorting",
+      "filtering",
+      "derived-state",
+      "accessibility"
+    ],
+    "prerequisites": [
+      "D5-E03"
+    ],
+    "context": "react",
+    "objective": "Combine a search control with a sort-direction toggle over derived list data.",
+    "requirements": [
+      "Render a labeled searchbox named Search catalog.",
+      "Render a button that toggles the sort label between Sort: A to Z and Sort: Z to A.",
+      "Filter by a case-insensitive name match and then sort the visible products by the active direction.",
+      "Show No catalog products. when the active controls hide every item.",
+      "Add one learner-written test for the second toggle or empty-result case."
+    ],
+    "constraints": [
+      "Do not mutate the input array.",
+      "Use accessible list and button semantics."
+    ],
+    "examples": [
+      {
+        "input": {
+          "products": [
+            "Bravo",
+            "Alpha",
+            "Charlie"
+          ],
+          "direction": "asc"
+        },
+        "output": [
+          "Alpha",
+          "Bravo",
+          "Charlie"
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/components/504-sortable-catalog.tsx"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-05/504-sortable-catalog.test.tsx"
+    ],
+    "hiddenTestContract": [
+      "The same query can be viewed in both sort directions.",
+      "Visible data stays derived from props plus local control state.",
+      "The source array is preserved."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D5-E05",
+    "title": "Extract catalog filter hook",
+    "day": 5,
+    "level": 3,
+    "concepts": [
+      "hooks",
+      "react-state",
+      "filtering",
+      "derived-state",
+      "rerenders"
+    ],
+    "prerequisites": [
+      "D5-E04"
+    ],
+    "context": "react",
+    "objective": "Move catalog filter state and derivation into a reusable hook.",
+    "requirements": [
+      "Return query, setQuery, onlyFeatured, toggleOnlyFeatured, and visibleProducts from the hook.",
+      "Filter visible products by a case-insensitive name match and the featured toggle.",
+      "Sort visibleProducts by name ascending.",
+      "Preserve control state across rerenders when the product list prop changes.",
+      "Add one learner-written test for a rerender or source-immutability invariant."
+    ],
+    "constraints": [
+      "Do not mutate the incoming product array or records.",
+      "visibleProducts must stay derived from the latest inputs and hook state."
+    ],
+    "examples": [
+      {
+        "input": {
+          "query": "ca",
+          "onlyFeatured": true
+        },
+        "output": [
+          "Camera"
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/hooks/505-use-catalog-filters.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-05/505-use-catalog-filters.test.tsx"
+    ],
+    "hiddenTestContract": [
+      "Hook state survives ordinary rerenders.",
+      "Featured filtering and text filtering compose correctly.",
+      "Returned visibleProducts ordering is deterministic."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D5-E06",
+    "title": "Extract compare-selection hook",
+    "day": 5,
+    "level": 3,
+    "concepts": [
+      "hooks",
+      "state-transitions",
+      "deduplication",
+      "immutability",
+      "sets"
+    ],
+    "prerequisites": [
+      "D5-E05"
+    ],
+    "context": "react",
+    "objective": "Implement reusable selection state with predictable toggle behavior.",
+    "requirements": [
+      "Initialize from a list of ids but keep each id only once.",
+      "toggleSelected adds a missing id or removes an existing id.",
+      "Preserve first-selected order in selectedIds.",
+      "clearSelected removes every selection.",
+      "isSelected reports whether an id is currently selected.",
+      "Add one learner-written test for duplicate initial ids or a clear-selection invariant."
+    ],
+    "constraints": [
+      "Selections should update immutably.",
+      "Repeated toggles must stay deterministic."
+    ],
+    "examples": [
+      {
+        "input": {
+          "initialIds": [
+            "p2",
+            "p2"
+          ],
+          "actions": [
+            "toggle:p1",
+            "toggle:p2"
+          ]
+        },
+        "output": [
+          "p1"
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/hooks/506-use-compare-selection.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-05/506-use-compare-selection.test.tsx"
+    ],
+    "hiddenTestContract": [
+      "Initial selections are deduplicated.",
+      "Selection order reflects first successful addition.",
+      "Removing one id does not reorder the remaining ids."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D5-E07",
+    "title": "Async product list states",
+    "day": 5,
+    "level": 4,
+    "concepts": [
+      "react-effects",
+      "async",
+      "loading-state",
+      "error-handling",
+      "retry"
+    ],
+    "prerequisites": [
+      "D5-E06"
+    ],
+    "context": "react",
+    "objective": "Render loading, success, empty, and error states around an async product request.",
+    "requirements": [
+      "Call loadProducts when the component mounts.",
+      "Show Loading products... while the request is in flight.",
+      "Render the resolved products in an accessible list.",
+      "Show No products available. when the request resolves to an empty list.",
+      "Show Could not load products. with a Retry button when the request fails.",
+      "Retry should start a fresh request.",
+      "Add one learner-written test for an error-path or empty-state invariant."
+    ],
+    "constraints": [
+      "Keep behavior deterministic across repeated renders.",
+      "Do not swallow the retry path in a page refresh."
+    ],
+    "examples": [
+      {
+        "input": {
+          "loadProducts": "resolves to [{id: p1, name: Cable}]"
+        },
+        "output": [
+          "Loading products...",
+          "Cable"
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/components/507-async-product-list.tsx"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-05/507-async-product-list.test.tsx"
+    ],
+    "hiddenTestContract": [
+      "Exactly one mount request is started per mount.",
+      "A failed request produces an accessible error state.",
+      "Retry starts a new request and replaces the previous state."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D5-E08",
+    "title": "Debounced product search hook",
+    "day": 5,
+    "level": 4,
+    "concepts": [
+      "hooks",
+      "async",
+      "debounce",
+      "stale-responses",
+      "effects"
+    ],
+    "prerequisites": [
+      "D5-E07"
+    ],
+    "context": "react",
+    "objective": "Coordinate debounced async search without letting an old response replace a newer one.",
+    "requirements": [
+      "Return query, setQuery, results, loading, and error from the hook.",
+      "Wait for delayMs before starting a request for the current query.",
+      "Clear the pending timer when the query changes before the delay elapses.",
+      "Ignore an older request result if a newer query has already started.",
+      "Set loading while the active request is running and clear it afterward.",
+      "Expose an error state when the active request rejects.",
+      "Add one learner-written test for a rejection path or stale-response invariant."
+    ],
+    "constraints": [
+      "Behavior must be deterministic under fake timers.",
+      "Do not mutate returned result arrays."
+    ],
+    "examples": [
+      {
+        "input": {
+          "query": "car",
+          "delayMs": 300
+        },
+        "output": [
+          "request after 300ms",
+          "latest response only"
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/hooks/508-use-debounced-product-search.ts"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-05/508-use-debounced-product-search.test.tsx"
+    ],
+    "hiddenTestContract": [
+      "Earlier timers are canceled when the query changes.",
+      "Late responses from older requests are ignored.",
+      "Unmount cleanup does not leave hanging state updates."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D5-E09",
+    "title": "Production-shaped catalog table",
+    "day": 5,
+    "level": 4,
+    "concepts": [
+      "react-state",
+      "deduplication",
+      "sorting",
+      "filtering",
+      "partial-records",
+      "accessibility"
+    ],
+    "prerequisites": [
+      "D5-E08"
+    ],
+    "context": "react",
+    "objective": "Combine normalization, filtering, and table rendering in a production-shaped component.",
+    "requirements": [
+      "Ignore records missing an id or a displayable name.",
+      "Keep only in-stock products.",
+      "Deduplicate by id, keeping the newest updatedAt record.",
+      "Render a labeled searchbox and a labeled category select.",
+      "Sort visible rows by featured first, then price ascending, then name ascending.",
+      "Show No matching rows. when the current controls hide every valid row.",
+      "Add one learner-written test for a duplicate-id, invalid-record, or tie-order invariant."
+    ],
+    "constraints": [
+      "Do not mutate the input array or records.",
+      "Derived categories and rows must stay deterministic."
+    ],
+    "examples": [
+      {
+        "input": {
+          "category": "Office",
+          "search": "cab"
+        },
+        "output": [
+          "Cable Pro"
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/components/509-catalog-table.tsx"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-05/509-catalog-table.test.tsx"
+    ],
+    "hiddenTestContract": [
+      "Newest valid record wins for duplicate ids.",
+      "Out-of-stock and invalid rows are excluded before filtering.",
+      "Sort order remains stable for equal inputs."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  },
+  {
+    "id": "D5-E10",
+    "title": "Async product explorer boss",
+    "day": 5,
+    "level": 5,
+    "concepts": [
+      "boss-integration",
+      "react-effects",
+      "async",
+      "stale-responses",
+      "retry",
+      "deduplication",
+      "sorting",
+      "filtering"
+    ],
+    "prerequisites": [
+      "D5-E09"
+    ],
+    "context": "boss",
+    "objective": "Build an accessible async explorer that loads, normalizes, filters, sorts, retries, and rejects stale results.",
+    "requirements": [
+      "Call searchProducts with the current query on mount and whenever the query changes.",
+      "Show Loading products... during the active request.",
+      "Show Could not load products. with a Retry button when the active request fails.",
+      "Retry the latest failed query instead of resetting to an older one.",
+      "Normalize the latest response by removing invalid rows, keeping only in-stock rows, and deduplicating by id with newest updatedAt wins.",
+      "Render a labeled Category select and a sort button that toggles between low-to-high and high-to-low price order after featured-first grouping.",
+      "Ignore stale responses from older requests.",
+      "Show No products found. when the latest normalized result set is empty after filters.",
+      "Add one learner-written test covering an uncovered failure path or invariant risk."
+    ],
+    "constraints": [
+      "Do not mutate fetched arrays or records.",
+      "Use accessible table, status, alert, button, searchbox, and combobox semantics.",
+      "Boss behavior must remain deterministic under deferred promises."
+    ],
+    "examples": [
+      {
+        "input": {
+          "query": "lamp",
+          "searchProducts": "fails once then succeeds"
+        },
+        "output": [
+          "Could not load products.",
+          "Retry",
+          "Lamp"
+        ]
+      }
+    ],
+    "starterFiles": [
+      "src/components/510-product-explorer-boss.tsx"
+    ],
+    "publicTestFiles": [
+      "tests/public/day-05/510-product-explorer-boss.test.tsx"
+    ],
+    "bossTestFiles": [
+      "tests/boss/day-05/510-product-explorer-boss.boss.test.tsx"
+    ],
+    "hiddenTestContract": [
+      "Older responses never replace newer query results.",
+      "Retry repeats the latest failed query.",
+      "Fetched payloads remain unchanged after rendering and sorting.",
+      "Normalization and ordering stay deterministic for equal inputs."
+    ],
+    "completion": {
+      "publicTestsPass": false,
+      "bossTestsPass": false,
+      "explanationRecorded": false,
+      "learnerTestsAdded": 0
+    },
+    "telemetry": {
+      "attempts": 0,
+      "hintLevelUsed": 0,
+      "activeMinutes": 0
+    }
+  }
+]
