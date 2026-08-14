@@ -1,0 +1,38 @@
+[tools]
+node = "22"
+
+[settings]
+# Keep Node's version aligned with the project's package manager tooling.
+idiomatic_version_file_enable_tools = ["node"]
+
+[tasks.install]
+description = "Install project dependencies"
+run = "npm install"
+
+[tasks.dev]
+description = "Start the Vite development server"
+run = "npm run dev"
+
+[tasks.check]
+description = "Type-check the project"
+run = "npm run check"
+
+[tasks.test]
+description = "Run the test suite"
+run = "npm run test:run"
+
+[tasks.build]
+description = "Type-check and build the production bundle"
+run = "npm run build"
+
+[tasks."test:current"]
+description = "Verify the current exercise batch"
+run = "npm run test:current"
+
+[tasks."cardio:next"]
+description = "Generate the next exercise batch"
+run = "npm run cardio:next"
+
+[tasks."cardio:history"]
+description = "Summarize safe git history metrics"
+run = "npm run cardio:history"
