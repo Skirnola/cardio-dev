@@ -1,3 +1,7 @@
 export function sumAllNumbers(values: number[]): number {
-  throw new Error("Not implemented");
+  let sum = 0;
+  for (const value of values) {
+    sum += value;
+  }
+  return sum;
 }
