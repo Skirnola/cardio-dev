@@ -1,6 +1,6 @@
 # Dev Cardio
 
-An adaptive React + TypeScript + Vitest practice system for rebuilding programming fundamentals in an AI-heavy workflow.
+An adaptive React + JavaScript + Vitest practice system for rebuilding programming fundamentals in an AI-heavy workflow.
 
 This file is both:
 
@@ -34,7 +34,7 @@ This is not LeetCode preparation and is not a race through disconnected puzzles.
 - **Target:** approximately 50 exercises
 - **Daily target:** approximately 10 exercises
 - **Session size:** batches of 2–5 exercises
-- **Primary stack:** React, TypeScript, Vitest, Testing Library
+- **Primary stack:** React, JavaScript, Vitest, Testing Library
 - **Evaluator:** automated tests plus a short learner explanation
 - **Adaptation signal:** correctness, attempts, elapsed active time, hints, regressions, explanation quality, and git commit history
 
@@ -42,7 +42,7 @@ Fifty is a target, not a quota. The generator may finish between 45 and 55 exerc
 
 ## 3. Non-Negotiable Learning Rules
 
-1. **Fundamentals first.** Do not introduce React complexity before the underlying TypeScript operation has appeared in isolation.
+1. **Fundamentals first.** Do not introduce React complexity before the underlying JavaScript operation has appeared in isolation.
 2. **Reuse before novelty.** At least 60% of each new batch must reuse earlier concepts in a new combination or context.
 3. **One main difficulty increase at a time.** Increase data complexity, ambiguity, scale, state, async behavior, or testing difficulty—not all simultaneously.
 4. **Tests define observable behavior.** They must not require one exact internal implementation unless that implementation is the lesson.
@@ -57,18 +57,18 @@ Fifty is a target, not a quota. The generator may finish between 45 and 55 exerc
 dev-cardio/
 ├── README.md                      # This specification
 ├── package.json
-├── tsconfig.json
-├── vite.config.ts
-├── vitest.setup.ts
+├── jsconfig.json
+├── vite.config.js
+├── vitest.setup.js
 ├── src/
 │   ├── exercises/
 │   │   ├── day-01/
-│   │   │   ├── 001-find-max.ts
-│   │   │   └── 002-sort-numbers.ts
+│   │   │   ├── 001-find-max.js
+│   │   │   └── 002-sort-numbers.js
 │   │   └── day-05/
 │   ├── components/               # React exercise implementations
 │   ├── hooks/                    # Hook exercises
-│   └── shared/                   # Shared types and approved helpers
+│   └── shared/                   # Shared utilities and approved helpers
 ├── tests/
 │   ├── public/                   # Visible tests: normal behavior and examples
 │   ├── boss/                     # Visible only when a boss exercise unlocks
@@ -82,9 +82,9 @@ dev-cardio/
 │   ├── concepts.json             # Concept graph and mastery estimates
 │   └── reflections.md            # Learner explanations and review notes
 └── scripts/
-    ├── verify-batch.ts           # Runs relevant tests and records results
-    ├── summarize-history.ts      # Produces safe commit metrics
-    └── generate-next-batch.ts    # Invokes the generation contract below
+    ├── verify-batch.js           # Runs relevant tests and records results
+    ├── summarize-history.js      # Produces safe commit metrics
+    └── generate-next-batch.js    # Invokes the generation contract below
 ```
 
 Suggested commands:
@@ -94,10 +94,10 @@ Suggested commands:
   "scripts": {
     "test": "vitest",
     "test:run": "vitest run",
-    "test:current": "vitest run --project current",
-    "cardio:verify": "tsx scripts/verify-batch.ts",
-    "cardio:history": "tsx scripts/summarize-history.ts",
-    "cardio:next": "tsx scripts/generate-next-batch.ts"
+    "test:current": "node scripts/verify-batch.js --current",
+    "cardio:verify": "node scripts/verify-batch.js",
+    "cardio:history": "node scripts/summarize-history.js",
+    "cardio:next": "node scripts/generate-next-batch.js"
   }
 }
 ```
@@ -118,7 +118,7 @@ This is not a strict wall between topics. React can appear earlier as a thin ren
 
 - 20% isolated fundamentals
 - 30% combined transformations
-- 25% production-shaped TypeScript
+- 25% production-shaped JavaScript
 - 20% React behavior
 - 5% boss/integration exercises
 
@@ -311,39 +311,36 @@ Never punish thoughtful refactoring, small commits, interruptions, accessibility
 
 Store each exercise in `exercises/manifest.json` using this shape:
 
-```ts
-type Exercise = {
-  id: string                    // e.g. "D2-E04"
-  title: string
-  day: 1 | 2 | 3 | 4 | 5
-  level: 1 | 2 | 3 | 4 | 5
-  concepts: string[]            // primary and reused concepts
-  prerequisites: string[]       // exercise IDs or concept thresholds
-  context: "isolated" | "combined" | "production" | "react" | "boss"
-  objective: string
-  requirements: string[]
-  constraints: string[]
-  examples: Array<{ input: unknown; output: unknown }>
-  starterFiles: string[]
-  publicTestFiles: string[]
-  bossTestFiles?: string[]
-  hiddenTestContract?: string[]  // invariants, never exact hidden cases
+```js
+const exercise = {
+  id: "D2-E04",
+  title: "Exercise title",
+  day: 2,                       // 1–5
+  level: 2,                     // 1–5
+  concepts: ["arrays"],         // primary and reused concepts
+  prerequisites: ["D1-E01"],   // exercise IDs or concept thresholds
+  context: "combined",          // isolated, combined, production, react, or boss
+  objective: "Observable goal",
+  requirements: ["Required behavior"],
+  constraints: ["Behavioral constraint"],
+  examples: [{ input: [], output: [] }],
+  starterFiles: ["src/exercises/example.js"],
+  publicTestFiles: ["tests/public/example.test.js"],
+  bossTestFiles: [],
+  hiddenTestContract: ["Published invariant"],
   completion: {
-    publicTestsPass: boolean
-    bossTestsPass?: boolean
-    explanationRecorded: boolean
-    learnerTestsAdded?: number
-  }
+    publicTestsPass: false,
+    explanationRecorded: false,
+    learnerTestsAdded: 0,
+  },
   telemetry: {
-    attempts: number
-    hintLevelUsed: 0 | 1 | 2 | 3
-    activeMinutes?: number
-    commit?: string
-  }
-}
+    attempts: 0,
+    hintLevelUsed: 0,            // 0–3
+  },
+};
 ```
 
-Each starter implementation should contain a typed signature and `throw new Error("Not implemented")` or a minimal render shell. Do not include solution-shaped comments.
+Each starter implementation should contain an exported function signature and `throw new Error("Not implemented")` or a minimal render shell. Do not include solution-shaped comments.
 
 ## 11. Test Rules
 
@@ -400,7 +397,7 @@ A boss pass requires:
 
 ## 12. Production-Context Progression
 
-Do not jump directly from `number[]` to a large application feature. Use this ladder:
+Do not jump directly from an array of numbers to a large application feature. Use this ladder:
 
 ```text
 primitive values
@@ -588,7 +585,7 @@ Inputs:
 - progress/reflections.md
 - exercises/manifest.json
 - the completed batch's test results
-- the safe output of scripts/summarize-history.ts
+- the safe output of scripts/summarize-history.js
 - git diff/status only to confirm the completed batch is committed
 
 Task:
@@ -610,7 +607,7 @@ Selection requirements:
 For every exercise, create:
 - manifest metadata matching the Exercise schema;
 - a concise requirement with explicit observable behavior;
-- typed starter code with no implementation clues;
+- JavaScript starter code with an exported signature and no implementation clues;
 - deterministic public Vitest tests;
 - a hidden-test contract listing invariants but not exact cases;
 - one required learner prediction or explanation question;
@@ -675,8 +672,8 @@ Use this template in `exercises/current-batch.md`:
 
 ### Level 1 — Sort numbers
 
-```ts
-sortAscending(values: number[]): number[]
+```js
+sortAscending(values)
 ```
 
 Requirements:
@@ -689,8 +686,8 @@ The learner focuses on ordering and mutation.
 
 ### Level 2 — Filter, dedupe, then sort
 
-```ts
-normalizeScores(values: number[]): number[]
+```js
+normalizeScores(values)
 ```
 
 Requirements:
@@ -704,8 +701,8 @@ The same sort concept now composes with filtering and uniqueness.
 
 ### Level 3 — Sort domain records with ties
 
-```ts
-rankUsers(users: User[]): User[]
+```js
+rankUsers(users)
 ```
 
 Requirements:
@@ -720,8 +717,8 @@ The learner must decompose a pipeline and define deterministic ordering.
 
 ### Level 4 — Production-shaped transformation
 
-```ts
-prepareProductRows(products: ApiProduct[]): ProductRow[]
+```js
+prepareProductRows(products)
 ```
 
 Requirements:

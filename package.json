@@ -5,15 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "npm run check && vite build",
     "preview": "vite preview",
-    "check": "tsc --noEmit",
+    "check": "node scripts/check-javascript.js",
     "test": "vitest",
     "test:run": "vitest run",
-    "test:current": "tsx scripts/verify-batch.ts --current",
-    "cardio:verify": "tsx scripts/verify-batch.ts",
-    "cardio:history": "tsx scripts/summarize-history.ts",
-    "cardio:next": "tsx scripts/generate-next-batch.ts"
+    "test:current": "node scripts/verify-batch.js --current",
+    "cardio:verify": "node scripts/verify-batch.js",
+    "cardio:history": "node scripts/summarize-history.js",
+    "cardio:next": "node scripts/generate-next-batch.js"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -23,13 +23,8 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
-    "@types/node": "^22.9.0",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^6.0.5",
     "jsdom": "^27.4.0",
-    "tsx": "^4.21.0",
-    "typescript": "^5.9.3",
     "vite": "^8.2.1",
     "vitest": "^4.1.10"
   }

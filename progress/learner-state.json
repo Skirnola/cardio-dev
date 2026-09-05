@@ -3,18 +3,15 @@
   "currentDay": 1,
   "dailyTarget": 10,
   "currentBatchNumber": 1,
-  "lastVerifiedAt": null,
+  "lastVerifiedAt": "2026-09-03T07:24:21.240Z",
   "historySummaryPath": "progress/history-summary.json",
   "recentBatchIds": [
-    "D1-E01",
-    "D1-E02",
-    "D1-E03",
-    "D1-E04"
+    "D1-E02"
   ],
   "exercises": {
     "D1-E01": {
-      "status": "not-started",
-      "attempts": 0,
+      "status": "in-progress",
+      "attempts": 2,
       "hintLevelUsed": 0,
       "activeMinutes": null,
       "startedAt": null,
@@ -24,14 +21,16 @@
       "bossTestsPass": null,
       "explanationRecorded": false,
       "learnerTestsAdded": 0,
-      "lastVerifiedAt": null,
-      "lastResult": "not-run",
+      "lastVerifiedAt": "2026-09-03T07:23:12.343Z",
+      "lastResult": "fail",
       "lastCommit": null,
-      "testFiles": []
+      "testFiles": [
+        "tests\\public\\day-01\\001-sum-all-numbers.test.js"
+      ]
     },
     "D1-E02": {
-      "status": "not-started",
-      "attempts": 0,
+      "status": "in-progress",
+      "attempts": 3,
       "hintLevelUsed": 0,
       "activeMinutes": null,
       "startedAt": null,
@@ -41,14 +40,16 @@
       "bossTestsPass": null,
       "explanationRecorded": false,
       "learnerTestsAdded": 0,
-      "lastVerifiedAt": null,
-      "lastResult": "not-run",
+      "lastVerifiedAt": "2026-09-03T07:24:21.240Z",
+      "lastResult": "fail",
       "lastCommit": null,
-      "testFiles": []
+      "testFiles": [
+        "tests\\public\\day-01\\002-find-largest-number.test.js"
+      ]
     },
     "D1-E03": {
-      "status": "not-started",
-      "attempts": 0,
+      "status": "in-progress",
+      "attempts": 1,
       "hintLevelUsed": 0,
       "activeMinutes": null,
       "startedAt": null,
@@ -58,14 +59,16 @@
       "bossTestsPass": null,
       "explanationRecorded": false,
       "learnerTestsAdded": 0,
-      "lastVerifiedAt": null,
-      "lastResult": "not-run",
+      "lastVerifiedAt": "2026-09-03T07:22:36.594Z",
+      "lastResult": "fail",
       "lastCommit": null,
-      "testFiles": []
+      "testFiles": [
+        "tests\\public\\day-01\\003-count-greater-than.test.js"
+      ]
     },
     "D1-E04": {
-      "status": "not-started",
-      "attempts": 0,
+      "status": "in-progress",
+      "attempts": 1,
       "hintLevelUsed": 0,
       "activeMinutes": null,
       "startedAt": null,
@@ -75,10 +78,12 @@
       "bossTestsPass": null,
       "explanationRecorded": false,
       "learnerTestsAdded": 0,
-      "lastVerifiedAt": null,
-      "lastResult": "not-run",
+      "lastVerifiedAt": "2026-09-03T07:22:36.594Z",
+      "lastResult": "fail",
       "lastCommit": null,
-      "testFiles": []
+      "testFiles": [
+        "tests\\public\\day-01\\004-find-first-index.test.js"
+      ]
     },
     "D1-E05": {
       "status": "not-started",
@@ -863,5 +868,53 @@
       "testFiles": []
     }
   },
-  "batches": []
+  "batches": [
+    {
+      "batchId": "verify-2026-09-03T07:22:36.594Z",
+      "exerciseIds": [
+        "D1-E01",
+        "D1-E02",
+        "D1-E03",
+        "D1-E04"
+      ],
+      "verifiedAt": "2026-09-03T07:22:36.594Z",
+      "passRate": 0,
+      "firstAttemptRate": 0,
+      "explanationRate": 0,
+      "strongHintCount": 0
+    },
+    {
+      "batchId": "verify-2026-09-03T07:23:06.318Z",
+      "exerciseIds": [
+        "D1-E02"
+      ],
+      "verifiedAt": "2026-09-03T07:23:06.318Z",
+      "passRate": 0,
+      "firstAttemptRate": 0,
+      "explanationRate": 0,
+      "strongHintCount": 0
+    },
+    {
+      "batchId": "verify-2026-09-03T07:23:12.343Z",
+      "exerciseIds": [
+        "D1-E01"
+      ],
+      "verifiedAt": "2026-09-03T07:23:12.343Z",
+      "passRate": 0,
+      "firstAttemptRate": 0,
+      "explanationRate": 0,
+      "strongHintCount": 0
+    },
+    {
+      "batchId": "verify-2026-09-03T07:24:21.240Z",
+      "exerciseIds": [
+        "D1-E02"
+      ],
+      "verifiedAt": "2026-09-03T07:24:21.240Z",
+      "passRate": 0,
+      "firstAttemptRate": 0,
+      "explanationRate": 0,
+      "strongHintCount": 0
+    }
+  ]
 }

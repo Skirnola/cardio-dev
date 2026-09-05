@@ -38,10 +38,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-01/001-sum-all-numbers.ts"
+      "src/exercises/day-01/001-sum-all-numbers.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-01/001-sum-all-numbers.test.ts"
+      "tests/public/day-01/001-sum-all-numbers.test.js"
     ],
     "hiddenTestContract": [
       "The input array is preserved.",
@@ -54,7 +54,7 @@
       "learnerTestsAdded": 0
     },
     "telemetry": {
-      "attempts": 0,
+      "attempts": 2,
       "hintLevelUsed": 0,
       "activeMinutes": 0
     }
@@ -101,10 +101,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-01/002-find-largest-number.ts"
+      "src/exercises/day-01/002-find-largest-number.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-01/002-find-largest-number.test.ts"
+      "tests/public/day-01/002-find-largest-number.test.js"
     ],
     "hiddenTestContract": [
       "The input array is preserved.",
@@ -117,7 +117,7 @@
       "learnerTestsAdded": 0
     },
     "telemetry": {
-      "attempts": 0,
+      "attempts": 3,
       "hintLevelUsed": 0,
       "activeMinutes": 0
     }
@@ -172,10 +172,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-01/003-count-greater-than.ts"
+      "src/exercises/day-01/003-count-greater-than.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-01/003-count-greater-than.test.ts"
+      "tests/public/day-01/003-count-greater-than.test.js"
     ],
     "hiddenTestContract": [
       "Values equal to the threshold are not counted.",
@@ -188,7 +188,7 @@
       "learnerTestsAdded": 0
     },
     "telemetry": {
-      "attempts": 0,
+      "attempts": 1,
       "hintLevelUsed": 0,
       "activeMinutes": 0
     }
@@ -242,10 +242,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-01/004-find-first-index.ts"
+      "src/exercises/day-01/004-find-first-index.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-01/004-find-first-index.test.ts"
+      "tests/public/day-01/004-find-first-index.test.js"
     ],
     "hiddenTestContract": [
       "The first matching index is returned when duplicates exist.",
@@ -258,7 +258,7 @@
       "learnerTestsAdded": 0
     },
     "telemetry": {
-      "attempts": 0,
+      "attempts": 1,
       "hintLevelUsed": 0,
       "activeMinutes": 0
     }
@@ -313,10 +313,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-01/005-keep-even-numbers.ts"
+      "src/exercises/day-01/005-keep-even-numbers.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-01/005-keep-even-numbers.test.ts"
+      "tests/public/day-01/005-keep-even-numbers.test.js"
     ],
     "hiddenTestContract": [
       "The output is a new array.",
@@ -378,10 +378,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-01/006-sum-positive-numbers.ts"
+      "src/exercises/day-01/006-sum-positive-numbers.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-01/006-sum-positive-numbers.test.ts"
+      "tests/public/day-01/006-sum-positive-numbers.test.js"
     ],
     "hiddenTestContract": [
       "Only values greater than zero contribute to the total.",
@@ -441,10 +441,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-01/007-average-numbers.ts"
+      "src/exercises/day-01/007-average-numbers.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-01/007-average-numbers.test.ts"
+      "tests/public/day-01/007-average-numbers.test.js"
     ],
     "hiddenTestContract": [
       "The input array is preserved.",
@@ -505,10 +505,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-01/008-find-longest-word.ts"
+      "src/exercises/day-01/008-find-longest-word.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-01/008-find-longest-word.test.ts"
+      "tests/public/day-01/008-find-longest-word.test.js"
     ],
     "hiddenTestContract": [
       "Ties are resolved by keeping the first longest word.",
@@ -578,10 +578,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-01/009-summarize-numbers.ts"
+      "src/exercises/day-01/009-summarize-numbers.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-01/009-summarize-numbers.test.ts"
+      "tests/public/day-01/009-summarize-numbers.test.js"
     ],
     "hiddenTestContract": [
       "The input array is preserved.",
@@ -658,10 +658,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-01/010-collapse-adjacent-duplicates.ts"
+      "src/exercises/day-01/010-collapse-adjacent-duplicates.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-01/010-collapse-adjacent-duplicates.test.ts"
+      "tests/public/day-01/010-collapse-adjacent-duplicates.test.js"
     ],
     "hiddenTestContract": [
       "Only adjacent duplicates are collapsed.",
@@ -728,10 +728,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-02/011-filter-visible-tickets.ts"
+      "src/exercises/day-02/011-filter-visible-tickets.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-02/011-filter-visible-tickets.test.ts"
+      "tests/public/day-02/011-filter-visible-tickets.test.js"
     ],
     "hiddenTestContract": [
       "Empty input returns an empty array.",
@@ -820,10 +820,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-02/012-sort-tasks-by-priority.ts"
+      "src/exercises/day-02/012-sort-tasks-by-priority.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-02/012-sort-tasks-by-priority.test.ts"
+      "tests/public/day-02/012-sort-tasks-by-priority.test.js"
     ],
     "hiddenTestContract": [
       "The output is a new array.",
@@ -885,10 +885,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-02/013-collect-unique-labels.ts"
+      "src/exercises/day-02/013-collect-unique-labels.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-02/013-collect-unique-labels.test.ts"
+      "tests/public/day-02/013-collect-unique-labels.test.js"
     ],
     "hiddenTestContract": [
       "Whitespace-only labels are ignored.",
@@ -976,10 +976,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-02/014-group-tickets-by-status.ts"
+      "src/exercises/day-02/014-group-tickets-by-status.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-02/014-group-tickets-by-status.test.ts"
+      "tests/public/day-02/014-group-tickets-by-status.test.js"
     ],
     "hiddenTestContract": [
       "All three keys are always present.",
@@ -1064,10 +1064,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-02/015-count-tickets-by-assignee.ts"
+      "src/exercises/day-02/015-count-tickets-by-assignee.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-02/015-count-tickets-by-assignee.test.ts"
+      "tests/public/day-02/015-count-tickets-by-assignee.test.js"
     ],
     "hiddenTestContract": [
       "Blank and null assignees normalize to Unassigned.",
@@ -1171,10 +1171,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-02/016-merge-contacts-by-email.ts"
+      "src/exercises/day-02/016-merge-contacts-by-email.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-02/016-merge-contacts-by-email.test.ts"
+      "tests/public/day-02/016-merge-contacts-by-email.test.js"
     ],
     "hiddenTestContract": [
       "Unsubscribed contacts are excluded.",
@@ -1260,10 +1260,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-02/017-collect-unique-product-tags.ts"
+      "src/exercises/day-02/017-collect-unique-product-tags.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-02/017-collect-unique-product-tags.test.ts"
+      "tests/public/day-02/017-collect-unique-product-tags.test.js"
     ],
     "hiddenTestContract": [
       "Discontinued products do not contribute tags.",
@@ -1351,10 +1351,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-02/018-group-events-by-day.ts"
+      "src/exercises/day-02/018-group-events-by-day.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-02/018-group-events-by-day.test.ts"
+      "tests/public/day-02/018-group-events-by-day.test.js"
     ],
     "hiddenTestContract": [
       "The day keys are sorted chronologically.",
@@ -1458,10 +1458,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-02/019-build-team-directory.ts"
+      "src/exercises/day-02/019-build-team-directory.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-02/019-build-team-directory.test.ts"
+      "tests/public/day-02/019-build-team-directory.test.js"
     ],
     "hiddenTestContract": [
       "Inactive members are excluded from the directory.",
@@ -1570,10 +1570,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-02/020-prepare-leaderboard.ts"
+      "src/exercises/day-02/020-prepare-leaderboard.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-02/020-prepare-leaderboard.test.ts"
+      "tests/public/day-02/020-prepare-leaderboard.test.js"
     ],
     "hiddenTestContract": [
       "Inactive entries are excluded.",
@@ -1635,10 +1635,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-03/021-offset-numbers.ts"
+      "src/exercises/day-03/021-offset-numbers.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-03/021-offset-numbers.test.ts"
+      "tests/public/day-03/021-offset-numbers.test.js"
     ],
     "hiddenTestContract": [
       "The original array must stay unchanged.",
@@ -1689,7 +1689,7 @@
           "profile": {
             "name": "Ada",
             "tags": [
-              "typescript"
+              "javascript"
             ]
           },
           "tag": "vitest"
@@ -1697,17 +1697,17 @@
         "output": {
           "name": "Ada",
           "tags": [
-            "typescript",
+            "javascript",
             "vitest"
           ]
         }
       }
     ],
     "starterFiles": [
-      "src/exercises/day-03/022-append-unique-tag.ts"
+      "src/exercises/day-03/022-append-unique-tag.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-03/022-append-unique-tag.test.ts"
+      "tests/public/day-03/022-append-unique-tag.test.js"
     ],
     "hiddenTestContract": [
       "No mutation of the input profile or nested arrays.",
@@ -1769,10 +1769,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-03/023-toggle-selection.ts"
+      "src/exercises/day-03/023-toggle-selection.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-03/023-toggle-selection.test.ts"
+      "tests/public/day-03/023-toggle-selection.test.js"
     ],
     "hiddenTestContract": [
       "The source array must remain unchanged.",
@@ -1849,10 +1849,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-03/024-filter-active-users.ts"
+      "src/exercises/day-03/024-filter-active-users.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-03/024-filter-active-users.test.ts"
+      "tests/public/day-03/024-filter-active-users.test.js"
     ],
     "hiddenTestContract": [
       "The input list and returned user objects must not be cloned unnecessarily.",
@@ -1938,10 +1938,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-03/025-dedupe-and-rank-tasks.ts"
+      "src/exercises/day-03/025-dedupe-and-rank-tasks.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-03/025-dedupe-and-rank-tasks.test.ts"
+      "tests/public/day-03/025-dedupe-and-rank-tasks.test.js"
     ],
     "hiddenTestContract": [
       "Tie handling must be explicit and deterministic.",
@@ -2015,10 +2015,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-03/026-apply-cart-action.ts"
+      "src/exercises/day-03/026-apply-cart-action.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-03/026-apply-cart-action.test.ts"
+      "tests/public/day-03/026-apply-cart-action.test.js"
     ],
     "hiddenTestContract": [
       "Missing ids should not create accidental placeholders.",
@@ -2089,10 +2089,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-03/027-transition-order.ts"
+      "src/exercises/day-03/027-transition-order.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-03/027-transition-order.test.ts"
+      "tests/public/day-03/027-transition-order.test.js"
     ],
     "hiddenTestContract": [
       "Invalid transitions must preserve the original reference.",
@@ -2174,10 +2174,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-03/028-apply-payments.ts"
+      "src/exercises/day-03/028-apply-payments.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-03/028-apply-payments.test.ts"
+      "tests/public/day-03/028-apply-payments.test.js"
     ],
     "hiddenTestContract": [
       "Repeated payments to the same account must accumulate in order.",
@@ -2265,10 +2265,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-03/029-apply-board-action.ts"
+      "src/exercises/day-03/029-apply-board-action.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-03/029-apply-board-action.test.ts"
+      "tests/public/day-03/029-apply-board-action.test.js"
     ],
     "hiddenTestContract": [
       "A move must fail when the source lane does not contain the card.",
@@ -2366,10 +2366,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-03/030-reduce-roster-action.ts"
+      "src/exercises/day-03/030-reduce-roster-action.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-03/030-reduce-roster-action.test.ts"
+      "tests/public/day-03/030-reduce-roster-action.test.js"
     ],
     "hiddenTestContract": [
       "The roster must stay deterministic across reruns.",
@@ -2459,10 +2459,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-04/031-load-search-options.ts"
+      "src/exercises/day-04/031-load-search-options.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-04/031-load-search-options.test.ts"
+      "tests/public/day-04/031-load-search-options.test.js"
     ],
     "hiddenTestContract": [
       "Whitespace-only queries still return active users.",
@@ -2522,10 +2522,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-04/032-load-search-options-result.ts"
+      "src/exercises/day-04/032-load-search-options-result.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-04/032-load-search-options-result.test.ts"
+      "tests/public/day-04/032-load-search-options-result.test.js"
     ],
     "hiddenTestContract": [
       "Successful output still follows the D4-E01 normalization rules.",
@@ -2595,10 +2595,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-04/033-run-search-request.ts"
+      "src/exercises/day-04/033-run-search-request.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-04/033-run-search-request.test.ts"
+      "tests/public/day-04/033-run-search-request.test.js"
     ],
     "hiddenTestContract": [
       "Loading is emitted before the loader settles.",
@@ -2678,10 +2678,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-04/034-load-selected-options.ts"
+      "src/exercises/day-04/034-load-selected-options.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-04/034-load-selected-options.test.ts"
+      "tests/public/day-04/034-load-selected-options.test.js"
     ],
     "hiddenTestContract": [
       "Unique requests begin before slower ones settle.",
@@ -2756,10 +2756,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-04/035-load-selected-options-settled.ts"
+      "src/exercises/day-04/035-load-selected-options-settled.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-04/035-load-selected-options-settled.test.ts"
+      "tests/public/day-04/035-load-selected-options-settled.test.js"
     ],
     "hiddenTestContract": [
       "The batch settles even when multiple requests reject.",
@@ -2817,10 +2817,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-04/036-load-search-options-with-signal.ts"
+      "src/exercises/day-04/036-load-search-options-with-signal.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-04/036-load-search-options-with-signal.test.ts"
+      "tests/public/day-04/036-load-search-options-with-signal.test.js"
     ],
     "hiddenTestContract": [
       "No loader call occurs when the signal is already aborted.",
@@ -2887,10 +2887,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-04/037-latest-search-store.ts"
+      "src/exercises/day-04/037-latest-search-store.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-04/037-latest-search-store.test.ts"
+      "tests/public/day-04/037-latest-search-store.test.js"
     ],
     "hiddenTestContract": [
       "Stale successes are ignored.",
@@ -2964,10 +2964,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-04/038-shared-user-loader.ts"
+      "src/exercises/day-04/038-shared-user-loader.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-04/038-shared-user-loader.test.ts"
+      "tests/public/day-04/038-shared-user-loader.test.js"
     ],
     "hiddenTestContract": [
       "In-flight duplicate calls share one loader promise.",
@@ -3031,10 +3031,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-04/039-aborting-latest-search-store.ts"
+      "src/exercises/day-04/039-aborting-latest-search-store.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-04/039-aborting-latest-search-store.test.ts"
+      "tests/public/day-04/039-aborting-latest-search-store.test.js"
     ],
     "hiddenTestContract": [
       "Previous signals are aborted when replaced.",
@@ -3115,10 +3115,10 @@
       }
     ],
     "starterFiles": [
-      "src/exercises/day-04/040-autocomplete-model.ts"
+      "src/exercises/day-04/040-autocomplete-model.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-04/040-autocomplete-model.test.ts"
+      "tests/public/day-04/040-autocomplete-model.test.js"
     ],
     "hiddenTestContract": [
       "Whitespace-only search returns to idle without a loader call.",
@@ -3187,10 +3187,10 @@
       }
     ],
     "starterFiles": [
-      "src/components/501-product-list.tsx"
+      "src/components/501-product-list.jsx"
     ],
     "publicTestFiles": [
-      "tests/public/day-05/501-product-list.test.tsx"
+      "tests/public/day-05/501-product-list.test.jsx"
     ],
     "hiddenTestContract": [
       "Sorting is deterministic for the same input.",
@@ -3265,10 +3265,10 @@
       }
     ],
     "starterFiles": [
-      "src/components/502-inventory-table.tsx"
+      "src/components/502-inventory-table.jsx"
     ],
     "publicTestFiles": [
-      "tests/public/day-05/502-inventory-table.test.tsx"
+      "tests/public/day-05/502-inventory-table.test.jsx"
     ],
     "hiddenTestContract": [
       "Newest valid record wins for duplicate ids.",
@@ -3332,10 +3332,10 @@
       }
     ],
     "starterFiles": [
-      "src/components/503-searchable-product-list.tsx"
+      "src/components/503-searchable-product-list.jsx"
     ],
     "publicTestFiles": [
-      "tests/public/day-05/503-searchable-product-list.test.tsx"
+      "tests/public/day-05/503-searchable-product-list.test.jsx"
     ],
     "hiddenTestContract": [
       "Matching is case-insensitive.",
@@ -3399,10 +3399,10 @@
       }
     ],
     "starterFiles": [
-      "src/components/504-sortable-catalog.tsx"
+      "src/components/504-sortable-catalog.jsx"
     ],
     "publicTestFiles": [
-      "tests/public/day-05/504-sortable-catalog.test.tsx"
+      "tests/public/day-05/504-sortable-catalog.test.jsx"
     ],
     "hiddenTestContract": [
       "The same query can be viewed in both sort directions.",
@@ -3460,10 +3460,10 @@
       }
     ],
     "starterFiles": [
-      "src/hooks/505-use-catalog-filters.ts"
+      "src/hooks/505-use-catalog-filters.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-05/505-use-catalog-filters.test.tsx"
+      "tests/public/day-05/505-use-catalog-filters.test.jsx"
     ],
     "hiddenTestContract": [
       "Hook state survives ordinary rerenders.",
@@ -3528,10 +3528,10 @@
       }
     ],
     "starterFiles": [
-      "src/hooks/506-use-compare-selection.ts"
+      "src/hooks/506-use-compare-selection.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-05/506-use-compare-selection.test.tsx"
+      "tests/public/day-05/506-use-compare-selection.test.jsx"
     ],
     "hiddenTestContract": [
       "Initial selections are deduplicated.",
@@ -3591,10 +3591,10 @@
       }
     ],
     "starterFiles": [
-      "src/components/507-async-product-list.tsx"
+      "src/components/507-async-product-list.jsx"
     ],
     "publicTestFiles": [
-      "tests/public/day-05/507-async-product-list.test.tsx"
+      "tests/public/day-05/507-async-product-list.test.jsx"
     ],
     "hiddenTestContract": [
       "Exactly one mount request is started per mount.",
@@ -3655,10 +3655,10 @@
       }
     ],
     "starterFiles": [
-      "src/hooks/508-use-debounced-product-search.ts"
+      "src/hooks/508-use-debounced-product-search.js"
     ],
     "publicTestFiles": [
-      "tests/public/day-05/508-use-debounced-product-search.test.tsx"
+      "tests/public/day-05/508-use-debounced-product-search.test.jsx"
     ],
     "hiddenTestContract": [
       "Earlier timers are canceled when the query changes.",
@@ -3719,10 +3719,10 @@
       }
     ],
     "starterFiles": [
-      "src/components/509-catalog-table.tsx"
+      "src/components/509-catalog-table.jsx"
     ],
     "publicTestFiles": [
-      "tests/public/day-05/509-catalog-table.test.tsx"
+      "tests/public/day-05/509-catalog-table.test.jsx"
     ],
     "hiddenTestContract": [
       "Newest valid record wins for duplicate ids.",
@@ -3790,13 +3790,13 @@
       }
     ],
     "starterFiles": [
-      "src/components/510-product-explorer-boss.tsx"
+      "src/components/510-product-explorer-boss.jsx"
     ],
     "publicTestFiles": [
-      "tests/public/day-05/510-product-explorer-boss.test.tsx"
+      "tests/public/day-05/510-product-explorer-boss.test.jsx"
     ],
     "bossTestFiles": [
-      "tests/boss/day-05/510-product-explorer-boss.boss.test.tsx"
+      "tests/boss/day-05/510-product-explorer-boss.boss.test.jsx"
     ],
     "hiddenTestContract": [
       "Older responses never replace newer query results.",
