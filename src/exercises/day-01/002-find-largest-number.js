@@ -4,5 +4,8 @@ export function findLargestNumber(values) {
     if (value > largestNumber) {
       largestNumber = value;
       }
-    }
+  }
+  return largestNumber;
 }
+
+0,1,2,4,5
